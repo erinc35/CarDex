@@ -1,0 +1,39 @@
+<div>
+<div class = "container" >
+
+  <p>Choose year, make, model and see the reviews:</p>
+
+  <form id="search-form" action="/searches" method="post">
+    <select id="make-button" name='make'>
+      <option value="" default selected>Make</option>
+      <% @makes_array.each do |make| %>
+        <option value=<%= make %>><%= make %></option>
+      <% end %>
+    </select>
+
+    <select id="model-button" name='model'>
+      <option value="" default selected>Model</option>
+    </select>
+
+    <select id="year-button" name='year'>
+      <option value="" default selected>Year</option>
+    </select>
+
+    <input id="submit-button" type="submit" name="Search">
+
+  </form><br>
+  <!-- <div><ul id="username" ><ul id="vehicle-info"></ul></ul></div> -->
+
+</div>
+
+<div class="float-left-div">
+    <div class="float-left">
+      <ul class="tabs">
+        <li class="tab-link current" data-tab="tab-1">Reviews</li>
+        <li class="tab-link" data-tab="tab-2">Safety Ratings</li>
+      </ul>
+
+      <%= render 'partials/reviews' %>
+      <%= render 'partials/safety' %>
+    </div>
+</div>
