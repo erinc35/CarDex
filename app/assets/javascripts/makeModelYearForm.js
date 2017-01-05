@@ -28,6 +28,10 @@ var showModelDropDown = function(){
       var model_response = $(response).filter("#model-button").text()
        $('#model-button').prop('disabled', false);
        $("#model-button").replaceWith(response);
+        $("#model-button").trigger("focus");
+       // $("#model-button").expandSelect();
+       // $("#model-button").attr('size',16);
+
       // for (var i = 0; i < model_response.length; i++){
       //   $("#model-button").append( '<option value=' + model_response[i] + '>' + model_response[i]+'</option>')
       // }

@@ -1,7 +1,7 @@
 <select id="model-button" name='model'>
-  <option default>Model</option>
+  <option value="Models" default>Model</option>
   <%=  models_array.each do |array| %>
-    <option><%= array %></option>
+    <option value=<%= array %>><%= array %></option>
   <% end %>
 </select>
 
