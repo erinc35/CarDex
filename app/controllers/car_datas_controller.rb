@@ -8,6 +8,15 @@ class CarDatasController < ApplicationController
       @models_array = parsed_response["models"].map {|array| array["name"]}
       render partial: 'partials/models', locals: {models_array: @models_array}
     end
+
+  end
+
+  def years
+    @api_response = HTTParty.get("http://api.edmunds.com/api/vehicle/v2/#{params["make"]}/#{params["model"]}/years?fmt=json&api_key=#{ENV['EDMUNDSAPIKEY']}")
+    p @api_response
+    if request.xhr?
+      @api_response["years"].map {|array| array["year"]}.to_json
+    end
   end
 
   def show

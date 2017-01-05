@@ -2,6 +2,7 @@ $(document).ready(function(){
   disableModelDropdown();
   disableYearDropdown();
   showModelDropDown();
+  showYearDropDown();
 })
 
 function disableModelDropdown(){
@@ -35,13 +36,13 @@ function disableYearDropdown(){
   $("#year-button").prop('disabled', true);
 }
 
-var showYearDropDown = function(){
+function showYearDropDown(){
   $("#model-button").on("change", function(event){
     var data = $(this).parent().serialize()
     //console.log(data)
     $.ajax({
       method: "POST",
-      url: "/year",
+      url: "/car_datas",
       data: data
     })
     .done(function(response){
@@ -54,3 +55,5 @@ var showYearDropDown = function(){
     })
   })
 }
+
+
