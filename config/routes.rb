@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  resources :car_datas
+
   get 'car_datas/show'
 
   get 'welcome/index'
