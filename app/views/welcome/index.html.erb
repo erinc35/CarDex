@@ -11,9 +11,10 @@
       <% end %>
     </select>
 
-    <select id="model-button" name='model'>
-      <option value="" default selected>Model</option>
-    </select>
+
+
+  <%= render partial: 'partials/models', locals: {models_array: []} %>
+
 
     <select id="year-button" name='year'>
       <option value="" default selected>Year</option>
