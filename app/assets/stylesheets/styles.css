@@ -3,6 +3,7 @@
   padding: 0;
 }
 .float-left{
+  border-radius: 8px;
   margin-top: 30%;
   margin-left: auto;
   margin-right: auto;
@@ -13,9 +14,12 @@
   position: relative;
 }
 .float-left > div > div {
+  position: relative;
+  margin-top: -20%;
   border-bottom: 1px solid;
 }
 ul.tabs{
+  border-radius: 8px;
   overflow: auto;
   margin: 0px;
   padding: 0px;
