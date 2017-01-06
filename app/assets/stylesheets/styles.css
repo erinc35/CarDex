@@ -50,6 +50,8 @@ ul.tabs li.current{
   border-bottom: 1px solid black;
 }
 .container{
+  background-color: cornsilk;
+  margin-top: 20%
   margin-right: auto;
   margin-left: auto;
   width: 50%;

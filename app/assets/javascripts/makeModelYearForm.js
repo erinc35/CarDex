@@ -1,7 +1,7 @@
 $(document).ready(function(){
   disableModelDropdown();
-  disableYearDropdown();
   showModelDropDown();
+  disableYearDropdown();
   showYearDropDown();
 })
 
@@ -32,14 +32,11 @@ function showModelDropDown(){
   })
 }
 
-function disableYearDropdown(){
-  $("#year-button").prop('disabled', true);
-}
-
 function showYearDropDown(){
   $("#model-button").on("change", function(event){
+    alert("ssssß")
     var data = $(this).parent().serialize()
-    //console.log(data)
+    console.log(data)
     $.ajax({
       method: "POST",
       url: "/car_datas",

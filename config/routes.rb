@@ -1,11 +1,14 @@
 Rails.application.routes.draw do
 
-  resources :car_datas
 
-  get 'car_datas/show'
+  resources :car_datas, :years
 
   get 'welcome/index'
+  get 'car_datas/create'
 
+
+  post 'years/create'
+  get 'years/create'
 
 
   root 'welcome#index'
