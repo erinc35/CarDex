@@ -10,20 +10,11 @@
         <option value=<%= make %>><%= make %></option>
       <% end %>
     </select>
-
-
-
   <%= render partial: 'partials/models', locals: {models_array: []} %>
-
-
-    <select id="year-button" name='year'>
-      <option value="" default selected>Year</option>
-    </select>
-
+  <%= render partial: 'partials/years', locals: {years_array: []} %>
     <input id="submit-button" type="submit" name="Search">
 
   </form><br>
-  <!-- <div><ul id="username" ><ul id="vehicle-info"></ul></ul></div> -->
 
 </div>
 
@@ -38,3 +29,9 @@
       <%= render 'partials/safety' %>
     </div>
 </div>
+
+
+
+
+
+

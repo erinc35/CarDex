@@ -3,19 +3,23 @@
   padding: 0;
 }
 .float-left{
+  border-radius: 8px;
   margin-top: 30%;
   margin-left: auto;
   margin-right: auto;
   background-color: #D9E4E6;
-  font-size: 19px;
-  width: 39%;
+  font-size: 20px;
+  width: 40%;
   text-align: center;
   position: relative;
 }
 .float-left > div > div {
+  position: relative;
+  margin-top: -20%;
   border-bottom: 1px solid;
 }
 ul.tabs{
+  border-radius: 8px;
   overflow: auto;
   margin: 0px;
   padding: 0px;
@@ -50,6 +54,8 @@ ul.tabs li.current{
   border-bottom: 1px solid black;
 }
 .container{
+  background-color: cornsilk;
+  margin-top: 20%;
   margin-right: auto;
   margin-left: auto;
   width: 50%;
