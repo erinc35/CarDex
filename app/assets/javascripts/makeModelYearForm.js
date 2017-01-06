@@ -23,7 +23,7 @@ function showModelDropDown(){
       data: data
     })
     .done(function(response){
-      var model_response = $(response).filter("#model-button").text()
+      // var model_response = $(response).filter("#model-button").text()
        $('#model-button').prop('disabled', false);
        $("#model-button").replaceWith(response);
         $("#model-button").trigger("focus");
@@ -33,22 +33,23 @@ function showModelDropDown(){
 }
 
 function showYearDropDown(){
-  $("#model-button").on("change", function(event){
-    alert("ssssß")
+  $("#search-form").on("change","#model-button", function(event){
     var data = $(this).parent().serialize()
     console.log(data)
     $.ajax({
       method: "POST",
-      url: "/car_datas",
+      url: "/years",
       data: data
     })
     .done(function(response){
-      var parsed_response = JSON.parse(response);
-      //console.log(response);
+      // console.log(response)
+      // var year_response = $(response).filter("#year-button").text();
+      // console.log(year_response);
       $("#year-button").prop('disabled', false);
-      for (var i = 0; i < parsed_response.length; i++){
-        $("#year-button").append( '<option value=' + parsed_response[i] + '>' + parsed_response[i]+'</option>')
-      }
+      $("#year-button").replaceWith(response);
+      // for (var i = 0; i < parsed_response.length; i++){
+      //   $("#year-button").append( '<option value=' + parsed_response[i] + '>' + parsed_response[i]+'</option>')
+      // }
     })
   })
 }

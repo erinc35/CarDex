@@ -1,13 +1,12 @@
 Rails.application.routes.draw do
 
 
-  resources :car_datas, :years
+  resources :car_datas
+  resources :years
 
   get 'welcome/index'
   get 'car_datas/create'
 
-
-  post 'years/create'
   get 'years/create'
 
 
