@@ -9,4 +9,7 @@ class WelcomeController < ApplicationController
     @makes_array = make_data["makes"].map {|array| array["name"]}
 
   end
+
+  def get_reviews
+  end
 end
