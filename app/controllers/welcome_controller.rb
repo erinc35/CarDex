@@ -11,5 +11,12 @@ class WelcomeController < ApplicationController
   end
 
   def get_reviews
+    reviews_data = HTTParty.get("https://api.edmunds.com/api/vehiclereviews/v2/#{params["make"].downcase}/#{params["model"].downcase}/#{params["year"].downcase}?fmt=json&api_key=#{ENV['EDMUNDSAPIKEY']}")
+
+    if request.xhr?
+      parsed_response = JSON.parse(reviews_data.body)
+      @reviews = parsed_response["reviews"].map {|array| array["text"]}
+      render partial: 'partials/reviews', locals: {reviews: @reviews}
+    end
   end
 end
