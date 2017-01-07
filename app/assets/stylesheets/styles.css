@@ -54,6 +54,7 @@ ul.tabs li.current{
   border-bottom: 1px solid black;
 }
 .container{
+  text-align: center;
   background-color: cornsilk;
   margin-top: 20%;
   margin-right: auto;
