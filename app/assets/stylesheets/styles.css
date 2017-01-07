@@ -69,3 +69,12 @@ ul.tabs li.current{
   padding-top: 4%;
   overflow: auto;
 }
+
+#search-form select{
+  font-size: 16px;
+}
+
+#submit-button{
+  border-radius: 8px;
+  font-size: 16px;
+}
