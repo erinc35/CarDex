@@ -25,7 +25,7 @@
         <li class="tab-link" data-tab="tab-2">Safety Ratings</li>
       </ul>
 
-      <%= render 'partials/reviews' %>
+      <%= render partial: 'partials/reviews', locals: {reviews: []} %>
       <%= render 'partials/safety' %>
     </div>
 </div>
