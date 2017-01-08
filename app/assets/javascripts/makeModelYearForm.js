@@ -75,6 +75,7 @@ function submitButton(){
     .done(function(response){
       // $(".float-left").children(".reviews").append(response);
       $(".reviews").append(response)
+      $("#submit-button").trigger("focus");
 
     })
 
