@@ -41,6 +41,7 @@ ul.tabs li.current{
   margin-left: 52px;
 }*/
 .tab-content{
+  text-align: start;
   display: none;
   background: #ededed;
 }
