@@ -5,6 +5,7 @@ $(document).ready(function(){
   disableSubmit();
   showYearDropDown();
   submitButton();
+  focusSubmitButton();
 })
 
 function disableModelDropdown(){
@@ -75,9 +76,15 @@ function submitButton(){
     .done(function(response){
       // $(".float-left").children(".reviews").append(response);
       $(".reviews").append(response)
-      $("#submit-button").trigger("focus");
+
 
     })
+
+  })
+}
+function focusSubmitButton(){
+  $("#year-button").change(function(){
+  $("#submit-button").trigger("focus");
 
   })
 }
