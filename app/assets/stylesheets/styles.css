@@ -8,7 +8,7 @@
   margin-right: auto;
   background-color: #D9E4E6;
   font-size: 20px;
-  width: 40%;
+  width: 80%;
   text-align: center;
   position: relative;
 }
@@ -41,6 +41,7 @@ ul.tabs li.current{
   margin-left: 52px;
 }*/
 .tab-content{
+  text-align: start;
   display: none;
   background: #ededed;
 }
