@@ -52,6 +52,7 @@ function showYearDropDown(){
       $("#year-button").prop('disabled', false);
       $("#year-button").replaceWith(response);
       $("#submit-button").prop('disabled', false);
+      $("#year-button").trigger("focus")
       // for (var i = 0; i < parsed_response.length; i++){
       //   $("#year-button").append( '<option value=' + parsed_response[i] + '>' + parsed_response[i]+'</option>')
       // }
