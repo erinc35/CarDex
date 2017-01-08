@@ -46,6 +46,7 @@ ul.tabs li.current{
 }
 
 .tab-content.current{
+  margin-top: 0;
   display: inherit;
 }
 

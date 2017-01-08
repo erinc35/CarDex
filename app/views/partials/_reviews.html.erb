@@ -1,7 +1,8 @@
-<div class="reviews">
-  <ul>
-  <% reviews.each do |review| %>
-    <li><%= review %></li>
-  <% end %>
-    </ul>
+<div id="tab-1" class="tab-content current reviews">
+    <% reviews.each do |review| %>
+  <div class="review">
+  <%= review %>
+  </div>
+    <% end %>
+
 </div>

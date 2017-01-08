@@ -72,8 +72,8 @@ function submitButton(){
       data: vehicle_data
     })
     .done(function(response){
-      $(".float-left").children(".reviews").prepend(response);
-
+      // $(".float-left").children(".reviews").append(response);
+      $(".reviews").append(response)
 
     })
 
