@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
 
+  get 'safety/show'
+
   resources :car_datas
   resources :years
 
