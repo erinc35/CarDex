@@ -19,4 +19,7 @@ class WelcomeController < ApplicationController
       render partial: 'partials/reviews', locals: {reviews: @reviews}
     end
   end
+
+  def safety
+  end
 end
