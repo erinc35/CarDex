@@ -63,6 +63,7 @@ function showYearDropDown(){
 function submitButtonReviews(){
   $(".container").on("submit", "#search-form", function(event){
     event.preventDefault();
+    $(".reviews").html("");
     var vehicle_data = $(this).serialize();
     $.ajax({
       method: "GET",
