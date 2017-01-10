@@ -65,6 +65,7 @@ ul.tabs li.current{
   width: 50%;
 }
 .container p{
+  font-size: 20px;
   padding-top: 3%;
 }
 
