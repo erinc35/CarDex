@@ -4,7 +4,7 @@ $(document).ready(function(){
   disableYearDropdown();
   disableSubmit();
   showYearDropDown();
-  submitButton();
+  submitButtonReviews();
   focusSubmitButton();
 })
 
@@ -61,7 +61,7 @@ function showYearDropDown(){
   })
 }
 
-function submitButton(){
+function submitButtonReviews(){
   $(".container").on("submit", "#search-form", function(event){
     event.preventDefault();
     var vehicle_data = $(this).serialize();
@@ -76,6 +76,27 @@ function submitButton(){
     .done(function(response){
       // $(".float-left").children(".reviews").append(response);
       $(".reviews").append(response)
+
+
+    })
+
+  })
+}
+function submitButtonSafety(){
+  $(".container").on("submit", "#search-form", function(event){
+    event.preventDefault();
+    var vehicle_data = $(this).serialize();
+    //var model = $(this).attr('model')
+    // console.log($(this))
+    console.log(vehicle_data)
+    $.ajax({
+      method: "GET",
+      url: "/welcome/safety",
+      data: vehicle_data
+    })
+    .done(function(response){
+      // $(".float-left").children(".reviews").append(response);
+      $(".safety").append(response)
 
 
     })
