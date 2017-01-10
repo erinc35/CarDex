@@ -6,6 +6,7 @@ $(document).ready(function(){
   showYearDropDown();
   submitButtonReviews();
   focusSubmitButton();
+  submitButtonSafety();
 })
 
 function disableModelDropdown(){
@@ -63,9 +64,6 @@ function submitButtonReviews(){
   $(".container").on("submit", "#search-form", function(event){
     event.preventDefault();
     var vehicle_data = $(this).serialize();
-    //var model = $(this).attr('model')
-    // console.log($(this))
-    console.log(vehicle_data)
     $.ajax({
       method: "GET",
       url: "/welcome/get_reviews",
