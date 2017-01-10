@@ -20,8 +20,6 @@ function disableSubmit(){
 function showModelDropDown(){
   $("#make-button").on("change", function(event){
       var data = $(this).serialize()
-
-      console.log(data)
     $.ajax({
       method: "POST",
       url: '/car_datas',
@@ -86,8 +84,6 @@ function submitButtonSafety(){
   $(".container").on("submit", "#search-form", function(event){
     event.preventDefault();
     var vehicle_data = $(this).serialize();
-    //var model = $(this).attr('model')
-    // console.log($(this))
     console.log(vehicle_data)
     $.ajax({
       method: "GET",
@@ -95,6 +91,7 @@ function submitButtonSafety(){
       data: vehicle_data
     })
     .done(function(response){
+      console.log(response)
       // $(".float-left").children(".reviews").append(response);
       $(".safety").append(response)
 
