@@ -22,6 +22,7 @@ class WelcomeController < ApplicationController
 
   def safety
     safety_data = HTTParty.get("https://api.edmunds.com/api/vehicle/v2/#{params["make"]}/#{"params[model]"}/#{params["year"]}/safety?fmt=json&api_key=#{ENV['EDMUNDSAPIKEY']}")
-
+    p safety_data
+    render partial: 'partials/safety', locals: {safety: @safety}
   end
 end
