@@ -11,5 +11,6 @@ function tabContent() {
 
     $(this).addClass('current');
     $("#"+tab_id).addClass('current');
+    // $(".tab-content").css("display", "block");
   })
 }
