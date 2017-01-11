@@ -73,7 +73,6 @@ function submitButtonReviews(){
     .done(function(response){
       // $(".float-left").children(".reviews").append(response);
       $(".reviews").append(response);
-      $(".tab-content current").css("display", "block");
 
 
     })
