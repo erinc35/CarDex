@@ -80,8 +80,8 @@ function submitButtonReviews(){
   })
 }
 function submitButtonSafety(){
-  $(".container").on("submit", "#search-form", function(event){
-    event.preventDefault();
+  $(".container").on("submit", "#search-form", function(){
+
     var vehicle_data = $(this).serialize();
     console.log(vehicle_data)
     $.ajax({
