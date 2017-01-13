@@ -26,7 +26,7 @@ ul.tabs{
 }
 ul.tabs li{
   overflow: auto;
-  background: none;
+  background: inherit;
   color: gray;
   display: inline-block;
   padding: 10px 15px;
@@ -41,7 +41,7 @@ ul.tabs li.current{
   margin-left: 52px;
 }*/
 .tab-content{
-  margin-top: 22%;
+  margin-top: 20%;
   text-align: start;
   display: none;
   background: #ededed;
