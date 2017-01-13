@@ -7,7 +7,7 @@
   margin-left: auto;
   margin-right: auto;
   background-color: #D9E4E6;
-  font-size: 21px;
+  font-size: 20px;
   width: 80%;
   text-align: center;
   position: relative;
@@ -70,7 +70,7 @@ ul.tabs li.current{
 }
 
 #search-form{
-  padding-top: 4%;
+  padding-top: 3%;
   overflow: auto;
 }
 
