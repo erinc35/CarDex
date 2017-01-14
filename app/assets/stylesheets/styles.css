@@ -35,7 +35,7 @@ ul.tabs li{
 ul.tabs li.current{
   border-radius: 8px;
   background: #e1e8f4;
-  color: blue;
+  color: black;
 }
 /*.tab-link.current{
   margin-left: 52px;
