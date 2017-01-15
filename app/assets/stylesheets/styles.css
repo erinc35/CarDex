@@ -20,7 +20,7 @@
 ul.tabs{
   border-radius: 8px;
   overflow: auto;
-  margin: 1px;
+  margin: 0px;
   padding: 0px;
   list-style: none;
 }
