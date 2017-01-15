@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  tabContent();
+  // tabContent();
 })
 
 function tabContent() {
