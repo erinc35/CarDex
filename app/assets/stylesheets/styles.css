@@ -33,7 +33,7 @@ ul.tabs li{
   cursor: pointer;
 }
 ul.tabs li.current{
-  border-radius: 9px;
+  border-radius: 8px;
   background: #e1e8f4;
   color: black;
 }
