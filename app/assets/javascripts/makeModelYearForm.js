@@ -72,8 +72,8 @@ function submitButtonReviews(){
     })
     .done(function(response){
       // $(".float-left").children(".reviews").append(response);
-      $(".reviews").append(response);
-
+      $("#tab-1").css("display", "block");
+      $("#tab-1").append(response);
 
     })
 
