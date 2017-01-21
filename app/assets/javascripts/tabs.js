@@ -10,12 +10,14 @@ function tabContent() {
     // $("#tab-1").css("display", "block")
 
     $(".tabs").children(".current").removeClass('current');
+    // $(".tab-content").removeClass('current');
     $(this).addClass('current');
     // console.log($(this))
-    var buu = $(this).children("li")
+    var buu = $(this).children("a").attr("href");
+    $(".tab-content").css("display", "none");
     console.log(buu)
-    // $(".tab-content").css("display", "none");
-    // $(buu).css("display", "block");
+    $(buu).css("display", "block");
+
 
     // $('.tab-content').removeClass('current');
     // $("#"+tab_id).addClass('current');
