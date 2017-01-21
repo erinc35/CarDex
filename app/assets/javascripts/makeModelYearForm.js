@@ -72,9 +72,9 @@ function submitButtonReviews(){
       data: vehicle_data
     })
     .done(function(response){
-      // $(".float-left").children(".reviews").append(response);
-      $("#tab-1").css("display", "block");
-      $("#tab-1").append(response);
+
+      // $("#tab-1").css("display", "block");
+      // $("#tab-1").append(response);
 
     })
 
@@ -91,9 +91,8 @@ function submitButtonSafety(){
       data: vehicle_data
     })
     .done(function(response){
-      console.log(response)
-      // $(".float-left").children(".reviews").append(response);
-      $(".safety").append(response)
+      // $(".safety").append(response)
+
 
 
     })
