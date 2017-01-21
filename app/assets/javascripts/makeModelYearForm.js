@@ -20,6 +20,7 @@ function disableSubmit(){
 }
 function showModelDropDown(){
   $("#make-button").on("change", function(event){
+
       var data = $(this).serialize()
     $.ajax({
       method: "POST",

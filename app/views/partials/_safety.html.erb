@@ -1,4 +1,9 @@
 <div id="tab-2" class="tab-content safety">
-  <p>blablabla</p>
+  <% safety.each do |rating| %>
+  <div class="safety">
+  <p><%= rating %></p><br>
+  </div>
+    <% end %>
+
 
 </div>
