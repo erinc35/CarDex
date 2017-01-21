@@ -30,4 +30,8 @@ class WelcomeController < ApplicationController
       render partial: 'partials/safety', locals: {safety: @safety}
     end
   end
+
+  # def make_year_model
+  #   params[]
+  # end
 end
