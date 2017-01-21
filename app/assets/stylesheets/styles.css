@@ -13,9 +13,11 @@
   position: relative;
 }
 .float-left > div > div {
+  margin-right: 2%;
+  margin-left: 2%;
   position: relative;
   margin-top: -20%;
-  border-bottom: 1px solid;
+  /*border-bottom: 1px solid;*/
 }
 ul.tabs{
   border-radius: 8px;
