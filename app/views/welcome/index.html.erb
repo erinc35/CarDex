@@ -20,22 +20,18 @@
 
 <div class="float-left-div">
     <div class="float-left">
-      <!-- <ul class="tabs">
-        <li class="current" data-tab="tab-1">Reviews</li>
-        <li data-tab="tab-2">Safety Ratings</li>
-      </ul> -->
 
       <ul class="tabs">
         <li class="current"><a href="#tab-1">Reviews</a></li>
         <li><a href="#tab-2">Safety Ratings</a></li>
-
       </ul>
-
 
       <%= render partial: 'partials/reviews', locals: {reviews: []} %>
       <%= render partial: 'partials/safety', locals: {safety: []} %>
     </div>
 </div>
+
+
 
 
 
