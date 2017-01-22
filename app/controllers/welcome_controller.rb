@@ -32,6 +32,10 @@ class WelcomeController < ApplicationController
   end
 
   def averageRating
+    ratings_data = HTTParty.get("https://api.edmunds.com/api/vehiclereviews/v2/#{params["make"]}/#{params["model"]}/#{params["year"]}?fmt=json&api_key=#{ENV['EDMUNDSAPIKEY']}")
+    if request.xhr?
+      ratings_data
+    end
   end
 
   # def make_year_model
