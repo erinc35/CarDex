@@ -7,6 +7,7 @@ $(document).ready(function(){
   submitButtonReviews();
   focusSubmitButton();
   submitButtonSafety();
+  submitButtonRatings();
 })
 
 function disableModelDropdown(){
@@ -79,11 +80,29 @@ function submitButtonReviews(){
 
   })
 }
+function submitButtonRatings(){
+  $(".container").on("submit", "#search-form", function(event){
+    event.preventDefault();
+
+    var vehicle_data = $(this).serialize();
+    console.log(vehicle_data)
+    $.ajax({
+      method: "GET",
+      url: "/welcome/averageRating",
+      data: vehicle_data
+    })
+    .done(function(response){
+      // $("#tab-1").css("display", "block");
+      // $("#tab-1").append(response);
+
+    })
+
+  })
+}
 function submitButtonSafety(){
   $(".container").on("submit", "#search-form", function(){
 
     var vehicle_data = $(this).serialize();
-    console.log(vehicle_data)
     $.ajax({
       method: "GET",
       url: "/welcome/safety",
