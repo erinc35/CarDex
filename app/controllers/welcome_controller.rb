@@ -31,6 +31,9 @@ class WelcomeController < ApplicationController
     end
   end
 
+  def averageRating
+  end
+
   # def make_year_model
   #   params[]
   # end

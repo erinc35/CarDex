@@ -13,6 +13,8 @@ Rails.application.routes.draw do
     get 'get_reviews', to: "welcome#get_reviews"
 
     get 'safety', to: "welcome#safety"
+
+    get 'averageRating', to: "welcome#averageRating"
   end
 
   root 'welcome#index'

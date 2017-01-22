@@ -72,7 +72,6 @@ function submitButtonReviews(){
       data: vehicle_data
     })
     .done(function(response){
-      $(".reviews-overview").append(response)
       // $("#tab-1").css("display", "block");
       // $("#tab-1").append(response);
 
