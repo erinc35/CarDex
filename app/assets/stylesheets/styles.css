@@ -98,7 +98,7 @@ ul.tabs li.current{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-position: center center;
+    background-position: 10% 85%;
   height: 300px;
   border-bottom: 1px solid black;
 }
