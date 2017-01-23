@@ -72,6 +72,7 @@ ul.tabs li.current{
 }
 
 #search-form{
+  font-family: 'helvetica neue';
   padding-top: 3%;
   overflow: auto;
 }
