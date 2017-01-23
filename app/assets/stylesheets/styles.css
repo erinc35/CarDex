@@ -102,3 +102,7 @@ ul.tabs li.current{
   height: 300px;
   border-bottom: 1px solid black;
 }
+.ratings{
+  padding-right: 5%;
+  padding-left: 5%;
+}
