@@ -93,7 +93,12 @@ ul.tabs li.current{
   display: none;
 }
 .road{
-  background-image: url("/assets/road.jpg")
+  background-image: url("/assets/road.JPG");
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
   height: 300px;
   border-bottom: 1px solid black;
 }
