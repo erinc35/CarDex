@@ -21,7 +21,7 @@ class WelcomeController < ApplicationController
   end
 
   def safety
-     safety_data = HTTParty.get("https://api.edmunds.com/api/vehicle/v2/#{params["make"]}/#{params["model"]}/#{params["year"]}/safety?fmt=json&api_key=#{ENV['EDMUNDSAPIKEY']}")
+    safety_data = HTTParty.get("https://api.edmunds.com/api/vehicle/v2/#{params["make"]}/#{params["model"]}/#{params["year"]}/safety?fmt=json&api_key=#{ENV['EDMUNDSAPIKEY']}")
     if request.xhr?
       parsed_response= JSON.parse(safety_data.body)
       @safety = parsed_response["nhtsa"]["categories"][0]["options"].map{|safe|safe.values[0] + " : " + safe.values[1] }
@@ -32,7 +32,7 @@ class WelcomeController < ApplicationController
   end
 
   def averageRating
-    ratings_data = HTTParty.get("https://api.edmunds.com/api/vehiclereviews/v2/#{params["make"]}/#{params["model"]}/#{params["year"]}?fmt=json&api_key=#{ENV['EDMUNDSAPIKEY']}")
+    ratings_data = HTTParty.get("https://api.edmunds.com/api/vehiclereviews/v2/#{params["make"].downcase}/#{params["model"].downcase}/#{params["year"].downcase}?fmt=json&api_key=#{ENV['EDMUNDSAPIKEY']}")
     if request.xhr?
       p "%%%%%%"
       p ratings_data
