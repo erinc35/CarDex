@@ -92,4 +92,8 @@ ul.tabs li.current{
 .tabs-div{
   display: none;
 }
-
+.road{
+  background-image: url("/assets/road.jpg")
+  height: 300px;
+  border-bottom: 1px solid black;
+}
