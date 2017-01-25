@@ -38,8 +38,8 @@ class WelcomeController < ApplicationController
       # p ratings_data
       parsed_response = JSON.parse(ratings_data.body)
       @averageRating = parsed_response["averageRating"]
-
-      render partial: "partials/averageRating", locals: {averageRating: parsed_response}
+      @reviewsCount = parsed_response["reviewsCount"]
+      render partial: "partials/averageRating", locals: {averageRating: @averageRating}
     end
   end
 

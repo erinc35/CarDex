@@ -93,7 +93,6 @@ function submitButtonRatings(){
     })
     .done(function(response){
       $(".ratings").append(response)
-
     })
 
   })
