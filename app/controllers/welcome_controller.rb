@@ -35,8 +35,10 @@ class WelcomeController < ApplicationController
     ratings_data = HTTParty.get("https://api.edmunds.com/api/vehiclereviews/v2/#{params["make"].downcase}/#{params["model"].downcase}/#{params["year"].downcase}?fmt=json&api_key=#{ENV['EDMUNDSAPIKEY']}")
     if request.xhr?
       p "%%%%%%"
-      p ratings_data
+      # p ratings_data
       parsed_response = JSON.parse(ratings_data.body)
+      @averageRating = parsed_response["averageRating"]
+
       render partial: "partials/averageRating", locals: {averageRating: parsed_response}
     end
   end
