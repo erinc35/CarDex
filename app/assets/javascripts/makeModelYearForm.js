@@ -85,7 +85,7 @@ function submitButtonRatings(){
     event.preventDefault();
 
     var vehicle_data = $(this).serialize();
-    console.log(vehicle_data)
+    // console.log(vehicle_data)
     $.ajax({
       method: "GET",
       url: "/welcome/averageRating",
