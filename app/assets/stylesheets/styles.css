@@ -114,7 +114,7 @@ ul.tabs li.current{
 span.stars, span.stars span {
     display: block;
     background: url('stars.png') 0 -16px repeat-x;
-    width: 80px;
+    width: 76px;
     height: 16px;
 }
 
