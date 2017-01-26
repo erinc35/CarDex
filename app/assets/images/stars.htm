@@ -1,0 +1,2116 @@
+<!DOCTYPE html>
+<!-- saved from url=(0102)http://stackoverflow.com/questions/1987524/turn-a-number-into-star-rating-display-using-jquery-and-css -->
+<html itemscope="" itemtype="http://schema.org/QAPage" class="gr__stackoverflow_com"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>javascript - Turn a number into star rating display using jQuery and CSS - Stack Overflow</title>
+    <link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico?v=4f32ecc8f43d">
+    <link rel="apple-touch-icon image_src" href="./stars_files/apple-touch-icon.png">
+    <link rel="search" type="application/opensearchdescription+xml" title="Stack Overflow" href="http://stackoverflow.com/opensearch.xml">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:domain" content="stackoverflow.com">
+    <meta property="og:type" content="website">
+
+    <meta property="og:image" itemprop="image primaryImageOfPage" content="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon@2.png?v=73d79a89bded">
+    <meta name="twitter:title" property="og:title" itemprop="title name" content="Turn a number into star rating display using jQuery and CSS">
+    <meta name="twitter:description" property="og:description" itemprop="description" content="I have been looking at jquery plugin and was wondering how to adapt that plugin to turn a number (like 4.8618164) into a 4.8618164 stars filled out of 5. Basically interpreting a number &amp;lt;5 into ...">
+    <meta property="og:url" content="http://stackoverflow.com/questions/1987524/turn-a-number-into-star-rating-display-using-jquery-and-css">
+    <link rel="canonical" href="http://stackoverflow.com/questions/1987524/turn-a-number-into-star-rating-display-using-jquery-and-css">
+
+    
+    
+    <script type="text/javascript" async="" src="http://engine.adzerk.net/ados?t=1485400299870&amp;request={%22Placements%22:[{%22A%22:22,%22S%22:8277,%22D%22:%22clc-tlb%22,%22AT%22:4,%22Z%22:[43]}],%22Keywords%22:%22javascript%2Cjquery%2Ccss%2Crating%2Cx-persona-frontend%22,%22Referrer%22:%22https%3A%2F%2Fwww.google.com%2F%22,%22IsAsync%22:true}"></script><script async="" src="./stars_files/quant.js"></script><script async="" src="./stars_files/beacon.js"></script><script async="" src="./stars_files/analytics.js"></script><script src="./stars_files/jquery.min.js"></script>
+    <script src="./stars_files/stub.en.js"></script>
+    <link rel="stylesheet" type="text/css" href="./stars_files/all.css">
+
+            <link rel="alternate" type="application/atom+xml" title="Feed for question &#39;Turn a number into star rating display using jQuery and CSS&#39;" href="http://stackoverflow.com/feeds/question/1987524">
+            <meta name="twitter:app:country" content="US">
+            <meta name="twitter:app:name:iphone" content="Stack Exchange iOS">
+            <meta name="twitter:app:id:iphone" content="871299723">
+            <meta name="twitter:app:url:iphone" content="se-zaphod://stackoverflow.com/questions/1987524/turn-a-number-into-star-rating-display-using-jquery-and-css">
+            <meta name="twitter:app:name:ipad" content="Stack Exchange iOS">
+            <meta name="twitter:app:id:ipad" content="871299723">
+            <meta name="twitter:app:url:ipad" content="se-zaphod://stackoverflow.com/questions/1987524/turn-a-number-into-star-rating-display-using-jquery-and-css">
+            <meta name="twitter:app:name:googleplay" content="Stack Exchange Android">
+            <meta name="twitter:app:url:googleplay" content="http://stackoverflow.com/questions/1987524/turn-a-number-into-star-rating-display-using-jquery-and-css">
+            <meta name="twitter:app:id:googleplay" content="com.stackexchange.marvin">
+        <script>
+        
+            StackExchange.ready(function () {
+                                    
+                    StackExchange.using("snippets", function () {
+                        StackExchange.snippets.initSnippetRenderer();
+                    });
+                    
+
+                StackExchange.using("postValidation", function () {
+                    StackExchange.postValidation.initOnBlurAndSubmit($('#post-form'), 2, 'answer');
+                });
+
+                
+                StackExchange.question.init({showAnswerHelp:true,totalCommentCount:0,shownCommentCount:0,highlightColor:'#F4A83D',backgroundColor:'#FFF',questionId:1987524});
+
+                styleCode();
+
+                    StackExchange.realtime.subscribeToQuestion('1', '1987524');
+                                                                    StackExchange.using("gps", function () { StackExchange.gps.trackOutboundClicks('#content', '.post-text', true); });
+
+            });
+        </script>
+
+
+    <script>
+        StackExchange.init({"locale":"en","stackAuthUrl":"https://stackauth.com","networkMetaHostname":"meta.stackexchange.com","serverTime":1485308630,"routeName":"Questions/Show","site":{"name":"Stack Overflow","description":"Q&A for professional and enthusiast programmers","isNoticesTabEnabled":true,"recaptchaPublicKey":"6LdchgIAAAAAAJwGpIzRQSOFaO0pU6s44Xt8aTwc","recaptchaAudioLang":"en","enableNewTagCreationWarning":true,"insertSpaceAfterNameTabCompletion":false,"id":1,"enableInsertDocLinkDialog":true,"enableSocialMediaInSharePopup":true},"user":{"fkey":"d9fbb4c5bc9f0758e19f9dc3fba88395","rep":0,"isAnonymous":true,"isAnonymousNetworkWide":true,"ab":{"question_show_tweaks":{"v":"altern_unansw_cta","g":2},"question_page_hero":{"v":"delay_hero_3","g":2}}},"events":{"postType":{"question":1},"postEditionSection":{"title":1,"body":2,"tags":3}},"story":{"minCompleteBodyLength":75}}, {"site":{"allowImageUploads":true,"enableUserHovercards":true,"styleCode":true,"enableNewLinkInsertDialog":true,"enableNewHeaderDesign":true,"enableNewHeaderDesignForLowRepUsers":true,"enableImgurHttps":true},"comments":{},"userProfile":{"openGraphAPIKey":"58740831ad23540e00c58987"},"tags":{},"accounts":{"currentPasswordRequiredForChangingStackIdPassword":true},"flags":{"allowRetractingFlags":true},"analytics":{"clientTimingsAbsoluteTimeout":30000,"clientTimingsDebounceTimeout":1000},"snippets":{"snippetsEnabled":true,"renderDomain":"stacksnippets.net"},"markdown":{"asteriskIntraWordEmphasis":true}});
+        StackExchange.using.setCacheBreakers({"js/prettify-full.en.js":"5f024bfc67fc","js/moderator.en.js":"9d88a6d486e9","js/full-anon.en.js":"1ceb30d58290","js/full.en.js":"54f8bed9c095","js/wmd.en.js":"ee25774a45a4","js/third-party/jquery.autocomplete.min.js":"d3b8fa7fdf74","js/third-party/jquery.autocomplete.min.en.js":"","js/mobile.en.js":"8c3bd5e12250","js/help.en.js":"91e5bd149e1f","js/tageditor.en.js":"10c2def076fb","js/tageditornew.en.js":"539b4002d5bb","js/inline-tag-editing.en.js":"2ddfa79492e7","js/revisions.en.js":"8f22ba768cac","js/review.en.js":"d0b19a748485","js/tagsuggestions.en.js":"78eee7c19ab2","js/post-validation.en.js":"58fa81ee899b","js/explore-qlist.en.js":"e71f14781288","js/events.en.js":"27d908ee879a","js/keyboard-shortcuts.en.js":"5fbbde135a57","js/external-editor.en.js":"e574ed908cf3","js/adops.en.js":"9a6a7812a212","js/external-editor.en.js":"e574ed908cf3","js/snippet-javascript.en.js":"63c6e84817f8","js/snippet-javascript-codemirror.en.js":"864efc04d1ae"});
+        StackExchange.using("gps", function() {
+             StackExchange.gps.init(true);
+        });
+    </script>
+    
+        <script>
+            StackExchange.ready(function () {
+                $('#nav-tour').click(function () {
+                    StackExchange.using("gps", function() {
+                        StackExchange.gps.track("aboutpage.click", { aboutclick_location: "headermain" }, true);
+                    });
+                });
+            });
+        </script>
+<script async="" src="./stars_files/full-anon.en.js"></script><script async="" src="./stars_files/snippet-javascript.en.js"></script><script async="" src="./stars_files/post-validation.en.js"></script><script async="" src="./stars_files/prettify-full.en.js"></script><link rel="stylesheet" href="./stars_files/jobs-multi.min.css" type="text/css"><script type="text/javascript" src="http://static.adzerk.net/Extensions/adFeedback.js"></script><link rel="stylesheet" href="http://static.adzerk.net/Extensions/adFeedback.css"></head>
+<body class="question-page new-topbar" data-gr-c-s-loaded="true" cz-shortcut-listen="true">
+    <noscript>&lt;div id="noscript-padding"&gt;&lt;/div&gt;</noscript>
+            <script>(function () { var old = $.fn.contents; $.fn.contents = function () { try { return old.apply(this, arguments); } catch (e) { return $([]); } } })()</script>
+        
+
+
+
+
+    <div id="notify-container"></div>
+    <div id="custom-header"></div>
+
+
+
+
+
+<div class="topbar">
+    <div class="topbar-wrapper">
+
+        <div class="js-topbar-dialog-corral">
+
+
+    <div class="topbar-dialog siteSwitcher-dialog dno">
+        <div class="header">
+            <h3><a href="http://stackoverflow.com/">current community</a>
+            </h3>
+        </div>
+        <div class="modal-content current-site-container">
+            <ul class="current-site">
+                    <li>
+                            <div class="related-links">
+                    <a href="http://chat.stackoverflow.com/" class="js-gps-track" data-gps-track="site_switcher.click({ item_type:6 })">chat</a>
+            </div>
+
+
+
+
+    <a href="http://stackoverflow.com/" class="current-site-link site-link js-gps-track" data-id="1" data-gps-track="
+        site_switcher.click({ item_type:3 })">
+        <div class="site-icon favicon favicon-stackoverflow" title="Stack Overflow"></div>
+        Stack Overflow
+    </a>
+
+                    </li>
+                    <li class="related-site">
+                            <div class="L-shaped-icon-container">
+        <span class="L-shaped-icon"></span>
+    </div>
+
+                        
+
+
+
+    <a href="http://meta.stackoverflow.com/" class="site-link js-gps-track" data-id="552" data-gps-track="
+            site.switch({ target_site:552, item_type:3 }),
+        site_switcher.click({ item_type:4 })">
+        <div class="site-icon favicon favicon-stackoverflowmeta" title="Meta Stack Overflow"></div>
+        Meta Stack Overflow
+    </a>
+
+                    </li>
+            </ul>
+        </div>
+
+        <div class="header" id="your-communities-header">
+            <h3>
+your communities            </h3>
+
+        </div>
+        <div class="modal-content" id="your-communities-section">
+
+                <div class="call-to-login">
+<a href="https://stackoverflow.com/users/signup?ssrc=site_switcher&amp;returnurl=%2fusers%2fstory%2fcurrent&amp;amp;utm_source=stackoverflow.com&amp;amp;utm_medium=dev-story&amp;amp;utm_campaign=signup-redirect" class="login-link js-gps-track" data-gps-track="site_switcher.click({ item_type:10 })">Sign up</a> or <a href="https://stackoverflow.com/users/login?ssrc=site_switcher&amp;returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f1987524%2fturn-a-number-into-star-rating-display-using-jquery-and-css" class="login-link js-gps-track" data-gps-track="site_switcher.click({ item_type:11 })">log in</a> to customize your list.
+                </div>
+        </div>
+
+        <div class="header">
+            <h3><a href="http://stackexchange.com/sites">more stack exchange communities</a>
+            </h3>
+            <a href="http://stackoverflow.blog/" class="fr">company blog</a>
+        </div>
+        <div class="modal-content">
+                <div class="child-content"></div>
+        </div>        
+    </div>
+        </div>
+
+        <div class="network-items">
+                <a href="http://stackexchange.com/" class="topbar-icon icon-site-switcher yes-hover js-site-switcher-button js-gps-track" data-gps-track="site_switcher.show" title="A list of all 163 Stack Exchange sites">
+                    <span class="hidden-text">Stack Exchange</span>
+                </a>
+
+    <a href="http://stackoverflow.com/questions/1987524/turn-a-number-into-star-rating-display-using-jquery-and-css#" class="topbar-icon icon-inbox yes-hover js-inbox-button" title="Recent inbox messages">
+        <span class="hidden-text">Inbox</span>
+        <span class="unread-count" style="display:none"></span>
+    </a>
+    <a href="http://stackoverflow.com/questions/1987524/turn-a-number-into-star-rating-display-using-jquery-and-css#" class="topbar-icon icon-achievements yes-hover js-achievements-button " data-unread-class="" title="Recent achievements: reputation, badges, and privileges earned">
+        <span class="hidden-text">Reputation and Badges</span>
+        <span class="unread-count" style="display:none">
+            
+        </span>
+    </a>
+        </div>
+
+        <div class="topbar-links">
+
+                <div class="links-container">
+                <span class="topbar-menu-links">
+                                    <a href="https://stackoverflow.com/users/signup?ssrc=head&amp;returnurl=%2fusers%2fstory%2fcurrent&amp;utm_source=stackoverflow.com&amp;utm_medium=dev-story&amp;utm_campaign=signup-redirect" class="login-link" rel="nofollow">sign up</a>
+                                <a href="https://stackoverflow.com/users/login?ssrc=head&amp;returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f1987524%2fturn-a-number-into-star-rating-display-using-jquery-and-css" class="login-link" rel="nofollow">log in</a>
+
+                            <a href="http://stackoverflow.com/tour">tour</a>
+        <a href="http://stackoverflow.com/questions/1987524/turn-a-number-into-star-rating-display-using-jquery-and-css#" class="icon-help js-help-button" title="Help Center and other resources">
+            help
+            <span class="triangle"></span>
+        </a>
+    <div class="topbar-dialog help-dialog js-help-dialog dno">
+        <div class="modal-content">
+            <ul>
+                                    <li>
+                        <a href="http://stackoverflow.com/tour" class="js-gps-track" data-gps-track="help_popup.click({ item_type:1 })">
+                            Tour
+                            <span class="item-summary">
+                                Start here for a quick overview of the site
+                            </span>
+                        </a>
+                    </li>
+                <li>
+                    <a href="http://stackoverflow.com/help" class="js-gps-track" data-gps-track="help_popup.click({ item_type:4 })">
+                        Help Center
+                        <span class="item-summary">
+                            Detailed answers to any questions you might have
+                        </span>
+                    </a>
+                </li>
+                        <li>
+                            <a href="http://meta.stackoverflow.com/" class="js-gps-track" data-gps-track="help_popup.click({ item_type:2 })">
+                                Meta
+                                <span class="item-summary">
+                                    Discuss the workings and policies of this site
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://stackoverflow.com/company/about" class="js-gps-track" data-gps-track="help_popup.click({ item_type:6 })">
+                                About Us
+                                <span class="item-summary">
+                                    Learn more about Stack Overflow the company
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.stackoverflowbusiness.com/?ref=topbar_help" class="js-gps-track" data-gps-track="help_popup.click({ item_type:7 })">
+                                Business
+                                <span class="item-summary">
+                                    Learn more about hiring developers or posting ads with us
+                                </span>
+                            </a>
+                        </li>
+            </ul>
+        </div>
+    </div>
+                                            </span>
+                </div>
+
+            <div class="search-container">
+                <form id="search" action="http://stackoverflow.com/search" method="get" autocomplete="off">
+                        <input name="q" type="text" placeholder="Search Q&amp;A" value="" tabindex="1" autocomplete="off" maxlength="240">
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+    <script>
+        StackExchange.ready(function() { StackExchange.topbar.init(); });
+    </script>
+
+    <div class="container">
+        <div id="header">
+            <br class="cbt">
+            <div id="hlogo">
+                <a href="http://stackoverflow.com/">
+                    Stack Overflow
+                </a>
+            </div>
+            <div id="hmenus">
+                <div class="nav mainnavs">
+                    <ul>
+                            <li class="youarehere">
+        <a id="nav-questions" href="http://stackoverflow.com/questions" class="js-gps-track" data-gps-track="top_nav.click({is_current:true, location:3, destination:1})">
+        Questions
+        </a>
+    </li>
+
+    <li>
+        <a id="nav-jobs" href="http://stackoverflow.com/jobs?med=site-ui&amp;ref=jobs-tab" class="js-gps-track" data-gps-track="top_nav.click({is_current:false, location:3, destination:6})">
+        Jobs
+        </a>
+    </li>
+                            <li>
+        <a id="nav-docs" href="http://stackoverflow.com/documentation" class="js-gps-track" data-gps-track="top_nav.click({is_current:false, location:3, destination:7})">
+        Documentation
+        </a>
+    </li>
+                            <li>
+        <a id="nav-tags" href="http://stackoverflow.com/tags" class="js-gps-track" data-gps-track="top_nav.click({is_current:false, location:3, destination:2})">
+        Tags
+        </a>
+    </li>
+
+                            <li>
+        <a id="nav-users" href="http://stackoverflow.com/users" class="js-gps-track" data-gps-track="top_nav.click({is_current:false, location:3, destination:3})">
+        Users
+        </a>
+    </li>
+
+                            <li>
+        <a id="nav-badges" href="http://stackoverflow.com/help/badges" class="js-gps-track" data-gps-track="top_nav.click({is_current:false, location:3, destination:4})">
+        Badges
+        </a>
+    </li>
+
+                    </ul>
+                </div>
+                <div class="nav askquestion">
+                    <ul>
+                        <li>
+                            <a id="nav-askquestion" href="http://stackoverflow.com/questions/ask">Ask Question</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+        <div id="content" class="snippet-hidden">
+            
+
+<div itemscope="" itemtype="http://schema.org/Question">
+    <link itemprop="image" href="./stars_files/apple-touch-icon.png">
+
+
+    <div id="herobox" class="alternate">
+        <div class="test"></div>
+            <div id="close">
+                <a title="click to minimize"><span>x</span> Dismiss</a>
+            </div>
+        <div class="content">
+            <b>Join the Stack Overflow Community</b>
+            <div class="separator"></div>
+            <div class="blurb">
+                Stack Overflow is a community of 6.6 million programmers, just like you, helping each other.
+                    <br>
+Join them; it only takes a minute:                    <br>
+            </div>
+            <a href="http://stackoverflow.com/users/signup?ssrc=hero&amp;returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f1987524%2fturn-a-number-into-star-rating-display-using-jquery-and-css" id="tell-me-more" class="button">Sign up</a>
+        </div>
+    </div>
+<script>
+    StackExchange.ready(function () {
+
+        var location = 0;
+        if ($("body").hasClass("questions-page")) {
+            location = 1;;
+        } else if ($("body").hasClass("question-page")) {
+            location = 1;;
+        } else if ($("body").hasClass("faq-page")) {
+            location = 5;;
+        } else if ($("body").hasClass("home-page")) {
+            location = 3;;
+        }
+
+        $('#tell-me-more').click(function () {
+            StackExchange.using("gps", function () {
+                StackExchange.gps.track("hero.action", { hero_action_type: 'cta', location: location }, true);
+            });
+        });
+        $('#herobox #close').click(function () {
+            StackExchange.using("gps", function () {
+                StackExchange.gps.track("hero.action", { hero_action_type: "minimize", location: location }, true);
+            });
+            $.cookie("hero", "mini", { path: "/", expires: 365 });
+            $.ajax({
+                url: "/hero-mini",
+                success: function (data) {
+                    $("#herobox").fadeOut("fast", function () {
+                        $("#herobox").replaceWith(data);
+                        $("#herobox-mini").fadeIn("fast");
+                    });
+                }
+            });
+            return false;
+        });
+    });
+
+</script>			<div id="question-header">
+                <h1 itemprop="name"><a href="http://stackoverflow.com/questions/1987524/turn-a-number-into-star-rating-display-using-jquery-and-css" class="question-hyperlink">Turn a number into star rating display using jQuery and CSS</a></h1>
+		</div>
+			<div id="mainbar">
+
+			
+
+<div class="question" data-questionid="1987524" id="question">
+
+    <div class="everyonelovesstackoverflow" id="clc-tlb"><a href="http://engine.adzerk.net/r?e=eyJhdiI6NDE0LCJhdCI6NCwiYnQiOjAsImNtIjo1MjcxODEsImNoIjoxMTc4LCJjayI6e30sImNyIjoxODc2Nzg1LCJkaSI6IjZmN2I1MDRiYzU1ZTQ5ZmI4ODlmZDk2M2EzMmYwMTUyIiwiZG0iOjEsImZjIjoyMjU3MDY0LCJmbCI6MjY4MDQyMiwiaXAiOiIxMDguODAuMTg3LjQiLCJrdyI6ImphdmFzY3JpcHQsanF1ZXJ5LGNzcyxyYXRpbmcseC1wZXJzb25hLWZyb250ZW5kIiwibnciOjIyLCJwYyI6MCwiZWMiOjAsInByIjoxNTY4LCJydCI6MiwicmYiOiJodHRwczovL3d3dy5nb29nbGUuY29tLyIsInN0Ijo4Mjc3LCJ1ayI6InVlMS03YzdiMmI4ZWYyYTk0ZGJlOGQ4MzQ2ZjVmNmUwMDc3YSIsInpuIjo0MywidHMiOjE0ODU0MDAzMDAyNTgsImJmIjp0cnVlLCJwbiI6ImNsYy10bGIiLCJ1ciI6Imh0dHBzOi8vd3d3LnN1cnZleW1vbmtleS5jby51ay9yL1ZDOTlDWjUifQ&amp;s=6W9jHjgEhbDxQoPGjFGhTTSkYxw" rel="nofollow" target="_blank" title=""><img src="http://static.adzerk.net/Advertisers/a46eaa2cad054f39a4b4f1f823d263ed.png" title="" alt="" border="0" width="728" height="90" style="display: none !important;"></a><img height="0px" width="0px" border="0" style="position: absolute; display: none !important;" src="http://engine.adzerk.net/i.gif?e=eyJhdiI6NDE0LCJhdCI6NCwiYnQiOjAsImNtIjo1MjcxODEsImNoIjoxMTc4LCJjayI6e30sImNyIjoxODc2Nzg1LCJkaSI6IjZmN2I1MDRiYzU1ZTQ5ZmI4ODlmZDk2M2EzMmYwMTUyIiwiZG0iOjEsImZjIjoyMjU3MDY0LCJmbCI6MjY4MDQyMiwiaXAiOiIxMDguODAuMTg3LjQiLCJrdyI6ImphdmFzY3JpcHQsanF1ZXJ5LGNzcyxyYXRpbmcseC1wZXJzb25hLWZyb250ZW5kIiwibnciOjIyLCJwYyI6MCwiZWMiOjAsInByIjoxNTY4LCJydCI6MiwicmYiOiJodHRwczovL3d3dy5nb29nbGUuY29tLyIsInN0Ijo4Mjc3LCJ1ayI6InVlMS03YzdiMmI4ZWYyYTk0ZGJlOGQ4MzQ2ZjVmNmUwMDc3YSIsInpuIjo0MywidHMiOjE0ODU0MDAzMDAyNjAsImJmIjp0cnVlLCJwbiI6ImNsYy10bGIiLCJmcSI6MH0&amp;s=wGaZQ3F5o2cwVVT3qtOc3hPuqbc"></div>    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="1987524">
+        <a class="vote-up-off" title="This question shows research effort; it is useful and clear">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">86</span>
+        <a class="vote-down-off" title="This question does not show any research effort; it is unclear or not useful">down vote</a>
+
+        <a class="star-off" href="http://stackoverflow.com/questions/1987524/turn-a-number-into-star-rating-display-using-jquery-and-css#">favorite</a>
+        <div class="favoritecount"><b>84</b></div>
+
+
+</div>
+
+            </td>
+            
+<td class="postcell">
+<div>
+    <div class="post-text" itemprop="text">
+
+<p>I have been looking at jquery plugin and was wondering how to adapt that plugin to turn a number (like 4.8618164) into a 4.8618164 stars filled out of 5. Basically interpreting a number &lt;5 into stars filled in a 5-star rating system using jQuery/JS/CSS. </p>
+
+<p>Note that this would only display/show the stars rating from an already available number and not accept new ratings submissions. </p>
+    </div>
+    <div class="post-taglist">
+        <a href="http://stackoverflow.com/questions/tagged/javascript" class="post-tag js-gps-track" title="show questions tagged &#39;javascript&#39;" rel="tag">javascript</a> <a href="http://stackoverflow.com/questions/tagged/jquery" class="post-tag js-gps-track" title="show questions tagged &#39;jquery&#39;" rel="tag">jquery</a> <a href="http://stackoverflow.com/questions/tagged/css" class="post-tag js-gps-track" title="show questions tagged &#39;css&#39;" rel="tag">css</a> <a href="http://stackoverflow.com/questions/tagged/rating" class="post-tag js-gps-track" title="show questions tagged &#39;rating&#39;" rel="tag">rating</a> 
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/q/1987524" title="short permalink to this question" class="short-link" id="link-post-1987524">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/1987524/edit" class="suggest-edit-post" title="">improve this question</a></div>        
+    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="http://stackoverflow.com/posts/1987524/revisions" title="show all edits to this post">edited <span title="2012-12-10 17:19:56Z" class="relativetime">Dec 10 '12 at 17:19</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/422353/madth3"><div class="gravatar-wrapper-32"><img src="./stars_files/3b1a3c7eb11abd99439c5b1b4b50b37f" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/422353/madth3">madth3</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">5,317</span><span title="5 gold badges"><span class="badge1"></span><span class="badgecount">5</span></span><span title="32 silver badges"><span class="badge2"></span><span class="badgecount">32</span></span><span title="41 bronze badges"><span class="badge3"></span><span class="badgecount">41</span></span>
+        </div>
+    </div>
+</div>    </td>
+    <td class="post-signature owner">
+        <div class="user-info ">
+    <div class="user-action-time">
+        asked <span title="2009-12-31 23:56:25Z" class="relativetime">Dec 31 '09 at 23:56</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/241673/steve"><div class="gravatar-wrapper-32"><img src="./stars_files/e6e4c8193d0d5a827c0e6968d2997e1d" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/241673/steve">Steve</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">1,637</span><span title="5 gold badges"><span class="badge1"></span><span class="badgecount">5</span></span><span title="26 silver badges"><span class="badge2"></span><span class="badgecount">26</span></span><span title="41 bronze badges"><span class="badge3"></span><span class="badgecount">41</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+</td>
+        </tr>
+                    
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-1987524" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-1987524" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid answering questions in comments.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://stackoverflow.com/questions/1987524/turn-a-number-into-star-rating-display-using-jquery-and-css#" onclick=""></a>
+        </div>         
+    </td>
+</tr>        </tbody></table>
+</div>
+
+			<div id="answers">
+
+				<a name="tab-top"></a>
+				<div id="answers-header">
+					<div class="subheader answers-subheader">
+						<h2>
+								6 Answers
+                                <span style="display:none;" itemprop="answerCount">6</span>
+						</h2>
+						<div>
+							<div id="tabs">
+        <a href="http://stackoverflow.com/questions/1987524/turn-a-number-into-star-rating-display-using-jquery-and-css?answertab=active#tab-top" data-nav-xhref="" title="Answers with the latest activity first" data-value="active" data-shortcut="A">
+            active</a>
+        <a href="http://stackoverflow.com/questions/1987524/turn-a-number-into-star-rating-display-using-jquery-and-css?answertab=oldest#tab-top" data-nav-xhref="" title="Answers in the order they were provided" data-value="oldest" data-shortcut="O">
+            oldest</a>
+        <a class="youarehere" href="http://stackoverflow.com/questions/1987524/turn-a-number-into-star-rating-display-using-jquery-and-css?answertab=votes#tab-top" data-nav-xhref="" title="Answers with the highest score first" data-value="votes" data-shortcut="V">
+            votes</a>
+</div>
+						</div>
+					</div>    
+				</div>    
+
+
+
+
+  
+<a name="1987545"></a>
+<div id="answer-1987545" class="answer accepted-answer" data-answerid="1987545" itemscope="" itemtype="http://schema.org/Answer" itemprop="acceptedAnswer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="1987545">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">221</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+        <span class="vote-accepted-on load-accepted-answer-date" title="loading when this answer was accepted...">accepted</span>
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Here's a solution for you, using only one very tiny and simple image and one automatically generated span element:</p>
+
+<h3>CSS</h3>
+
+<pre class="default prettyprint prettyprinted"><code><span class="pln">span</span><span class="pun">.</span><span class="pln">stars</span><span class="pun">,</span><span class="pln"> span</span><span class="pun">.</span><span class="pln">stars span </span><span class="pun">{</span><span class="pln">
+    display</span><span class="pun">:</span><span class="pln"> block</span><span class="pun">;</span><span class="pln">
+    background</span><span class="pun">:</span><span class="pln"> url</span><span class="pun">(</span><span class="pln">stars</span><span class="pun">.</span><span class="pln">png</span><span class="pun">)</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="pun">-</span><span class="lit">16px</span><span class="pln"> repeat</span><span class="pun">-</span><span class="pln">x</span><span class="pun">;</span><span class="pln">
+    width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">80px</span><span class="pun">;</span><span class="pln">
+    height</span><span class="pun">:</span><span class="pln"> </span><span class="lit">16px</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+span</span><span class="pun">.</span><span class="pln">stars span </span><span class="pun">{</span><span class="pln">
+    background</span><span class="pun">-</span><span class="pln">position</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+
+<h3>Image</h3>
+
+<blockquote>
+  <p><img src="./stars_files/stars.png" alt="alt text"></p>
+</blockquote>
+
+<p><strong>Note:</strong> do <em>NOT</em> hotlink to the above image! Copy the file to your own server and use it from there.</p>
+
+<h3>jQuery</h3>
+
+<pre class="default prettyprint prettyprinted"><code><span class="pln">$</span><span class="pun">.</span><span class="pln">fn</span><span class="pun">.</span><span class="pln">stars </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">return</span><span class="pln"> $</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">each</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="com">// Get the value</span><span class="pln">
+        </span><span class="kwd">var</span><span class="pln"> val </span><span class="pun">=</span><span class="pln"> parseFloat</span><span class="pun">(</span><span class="pln">$</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">html</span><span class="pun">());</span><span class="pln">
+        </span><span class="com">// Make sure that the value is in 0 - 5 range, multiply to get width</span><span class="pln">
+        </span><span class="kwd">var</span><span class="pln"> size </span><span class="pun">=</span><span class="pln"> </span><span class="typ">Math</span><span class="pun">.</span><span class="pln">max</span><span class="pun">(</span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="pun">(</span><span class="typ">Math</span><span class="pun">.</span><span class="pln">min</span><span class="pun">(</span><span class="lit">5</span><span class="pun">,</span><span class="pln"> val</span><span class="pun">)))</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> </span><span class="lit">16</span><span class="pun">;</span><span class="pln">
+        </span><span class="com">// Create stars holder</span><span class="pln">
+        </span><span class="kwd">var</span><span class="pln"> $span </span><span class="pun">=</span><span class="pln"> $</span><span class="pun">(</span><span class="str">'&lt;span /&gt;'</span><span class="pun">).</span><span class="pln">width</span><span class="pun">(</span><span class="pln">size</span><span class="pun">);</span><span class="pln">
+        </span><span class="com">// Replace the numerical value with stars</span><span class="pln">
+        $</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">html</span><span class="pun">(</span><span class="pln">$span</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">});</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+
+<p>If you want to restrict the stars to only half or quarter star sizes, add one of these rows before the <code>var size</code> row:</p>
+
+<pre class="default prettyprint prettyprinted"><code><span class="pln">val </span><span class="pun">=</span><span class="pln"> </span><span class="typ">Math</span><span class="pun">.</span><span class="pln">round</span><span class="pun">(</span><span class="pln">val </span><span class="pun">*</span><span class="pln"> </span><span class="lit">4</span><span class="pun">)</span><span class="pln"> </span><span class="pun">/</span><span class="pln"> </span><span class="lit">4</span><span class="pun">;</span><span class="pln"> </span><span class="com">/* To round to nearest quarter */</span><span class="pln">
+val </span><span class="pun">=</span><span class="pln"> </span><span class="typ">Math</span><span class="pun">.</span><span class="pln">round</span><span class="pun">(</span><span class="pln">val </span><span class="pun">*</span><span class="pln"> </span><span class="lit">2</span><span class="pun">)</span><span class="pln"> </span><span class="pun">/</span><span class="pln"> </span><span class="lit">2</span><span class="pun">;</span><span class="pln"> </span><span class="com">/* To round to nearest half */</span></code></pre>
+
+<h3>HTML</h3>
+
+<pre class="default prettyprint prettyprinted"><code><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"stars"</span><span class="tag">&gt;</span><span class="pln">4.8618164</span><span class="tag">&lt;/span&gt;</span><span class="pln">
+</span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"stars"</span><span class="tag">&gt;</span><span class="pln">2.6545344</span><span class="tag">&lt;/span&gt;</span><span class="pln">
+</span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"stars"</span><span class="tag">&gt;</span><span class="pln">0.5355</span><span class="tag">&lt;/span&gt;</span><span class="pln">
+</span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"stars"</span><span class="tag">&gt;</span><span class="pln">8</span><span class="tag">&lt;/span&gt;</span></code></pre>
+
+<h3>Usage</h3>
+
+<pre class="default prettyprint prettyprinted"><code><span class="pln">$</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    $</span><span class="pun">(</span><span class="str">'span.stars'</span><span class="pun">).</span><span class="pln">stars</span><span class="pun">();</span><span class="pln">
+</span><span class="pun">});</span></code></pre>
+
+<h3>Output</h3>
+
+<blockquote>
+  <p><img src="./stars_files/stars_output.png" alt="Image from fugue icon set (www.pinvoke.com)"></p>
+</blockquote>
+
+<h3>Demo</h3>
+
+<blockquote>
+  <p><a href="http://www.ulmanen.fi/stuff/stars.php" rel="nofollow noreferrer">http://www.ulmanen.fi/stuff/stars.php</a></p>
+</blockquote>
+
+<p>This will probably suit your needs. With this method you don't have to calculate any three quarter or whatnot star widths, just give it a float and it'll give you your stars.</p>
+
+<hr>
+
+<p>A small explanation on how the stars are presented might be in order.</p>
+
+<p>The script creates two block level span elements. Both of the spans initally get a size of 80px * 16px and a background image stars.png. The spans are nested, so that the structure of the spans looks like this:</p>
+
+<pre class="default prettyprint prettyprinted"><code><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"stars"</span><span class="tag">&gt;</span><span class="pln">
+    </span><span class="tag">&lt;span&gt;&lt;/span&gt;</span><span class="pln">
+</span><span class="tag">&lt;/span&gt;</span></code></pre>
+
+<p>The outer span gets a <code>background-position</code> of <code>0 -16px</code>. That makes the gray stars in the outer span visible. As the outer span has height of 16px and <code>repeat-x</code>, it will only show 5 gray stars.</p>
+
+<p>The inner span on the other hand has a <code>background-position</code> of <code>0 0</code> which makes only the yellow stars visible.</p>
+
+<p>This would of course work with two separate imagefiles, star_yellow.png and star_gray.png. But as the stars have a fixed height, we can easily combine them into one image. This utilizes the <a href="http://css-tricks.com/css-sprites/" rel="nofollow noreferrer">CSS sprite technique</a>.</p>
+
+<p>Now, as the spans are nested, they are automatically overlayed over each other. In the default case, when the width of both spans is 80px, the yellow stars completely obscure the grey stars.</p>
+
+<p>But when we adjust the width of the inner span, the width of the yellow stars decreases, revealing the gray stars.</p>
+
+<p>Accessibility-wise, it would have been wiser to leave the float number inside the inner span and hide it with <code>text-indent: -9999px</code>, so that people with CSS turned off would at least see the floating point number instead of the stars.</p>
+
+<p>Hopefully that made some sense.</p>
+
+<hr>
+
+<h3>Updated 2010/10/22</h3>
+
+<p>Now even more compact and harder to understand! Can also be squeezed down to a one liner:</p>
+
+<pre class="default prettyprint prettyprinted"><code><span class="pln">$</span><span class="pun">.</span><span class="pln">fn</span><span class="pun">.</span><span class="pln">stars </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">return</span><span class="pln"> $</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">each</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        $</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">html</span><span class="pun">(</span><span class="pln">$</span><span class="pun">(</span><span class="str">'&lt;span /&gt;'</span><span class="pun">).</span><span class="pln">width</span><span class="pun">(</span><span class="typ">Math</span><span class="pun">.</span><span class="pln">max</span><span class="pun">(</span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="pun">(</span><span class="typ">Math</span><span class="pun">.</span><span class="pln">min</span><span class="pun">(</span><span class="lit">5</span><span class="pun">,</span><span class="pln"> parseFloat</span><span class="pun">(</span><span class="pln">$</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">html</span><span class="pun">()))))</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> </span><span class="lit">16</span><span class="pun">));</span><span class="pln">
+    </span><span class="pun">});</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/1987545" title="short permalink to this answer" class="short-link" id="link-post-1987545">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/1987545/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="http://stackoverflow.com/posts/1987545/revisions" title="show all edits to this post">edited <span title="2013-03-06 14:06:02Z" class="relativetime">Mar 6 '13 at 14:06</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        
+        <div class="-flair">
+            
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2010-01-01 00:09:33Z" class="relativetime">Jan 1 '10 at 0:09</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/198707/tatu-ulmanen"><div class="gravatar-wrapper-32"><img src="./stars_files/bd4b98fa3891e761de0c60a042832657" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/198707/tatu-ulmanen">Tatu Ulmanen</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 78,257" dir="ltr">78.3k</span><span title="24 gold badges"><span class="badge1"></span><span class="badgecount">24</span></span><span title="141 silver badges"><span class="badge2"></span><span class="badgecount">141</span></span><span title="162 bronze badges"><span class="badge3"></span><span class="badgecount">162</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-1987545" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="15" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-1904500" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">4</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">+1, much more elegant (and complete) than mine. I'm almost ashamed to leave my answer here next to this one. But I will (for now) since it has more positive than negative rep :-)</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/14860/paxdiablo" title="507,844 reputation" class="comment-user">paxdiablo</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/1987524/turn-a-number-into-star-rating-display-using-jquery-and-css#comment1904500_1987545"><span title="2010-01-01 00:39:22Z" class="relativetime-clean">Jan 1 '10 at 0:39</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-1904690" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Very clever indeed</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/126562/justin-johnson" title="22,437 reputation" class="comment-user">Justin Johnson</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/1987524/turn-a-number-into-star-rating-display-using-jquery-and-css#comment1904690_1987545"><span title="2010-01-01 02:30:20Z" class="relativetime-clean">Jan 1 '10 at 2:30</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-1904772" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@Tatu, any chance of fleshing it out a bit more with <i>how</i> this works. My knowledge of jQuery is just a tad short to totally get it. I think I understand how the CSS works with repeating in the x direction and the 16*5=80 bit and how you adjust the width of the yellow-star image, but how are you overlaying the two images on top of each other from a single image that has one star above the other? Does the -16px bring the gray star up to the same level as the yellow?</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/14860/paxdiablo" title="507,844 reputation" class="comment-user">paxdiablo</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/1987524/turn-a-number-into-star-rating-display-using-jquery-and-css#comment1904772_1987545"><span title="2010-01-01 03:42:08Z" class="relativetime-clean">Jan 1 '10 at 3:42</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-1905771" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@paxdiablo and others, thanks for the support. Perhaps I should make this a proper jQuery plugin as this technique seems to come as a surprise to most :)</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/198707/tatu-ulmanen" title="78,257 reputation" class="comment-user">Tatu Ulmanen</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/1987524/turn-a-number-into-star-rating-display-using-jquery-and-css#comment1905771_1987545"><span title="2010-01-01 14:41:46Z" class="relativetime-clean">Jan 1 '10 at 14:41</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-30747759" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="warm">6</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy"><b>Or even smaller:</b> <a href="http://jsbin.com/IBIDalEn/2/edit" rel="nofollow noreferrer">jsbin.com/IBIDalEn/2/edit</a> (P.S. removed unneeded stuff in JS, minified CSS selectors and used <code>max-width</code>).</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/383904/roko-c-buljan" title="94,575 reputation" class="comment-user">Roko C. Buljan</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/1987524/turn-a-number-into-star-rating-display-using-jquery-and-css#comment30747759_1987545"><span title="2013-12-13 04:06:12Z" class="relativetime-clean">Dec 13 '13 at 4:06</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-1987545" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link  dno" title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."></a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link " title="expand to show all comments on this post" href="http://stackoverflow.com/questions/1987524/turn-a-number-into-star-rating-display-using-jquery-and-css#" onclick="">show <b>15</b> more comments</a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+<div class="newsletter-anon">
+    <img src="./stars_files/apple-touch-icon.png" class="newsletter-logo">
+    <div class="newsletter-container">
+        <h2>Did you find this question interesting? Try our newsletter</h2>
+        <p class="newsletter-description">
+            Sign up for our newsletter and get our top new questions delivered to your inbox (<a href="http://stackexchange.com/newsletters/newsletter?site=stackoverflow.com" id="newsletter-preview">see an example</a>).
+        </p>
+        <form id="anon-newsletter-form" data-error="There was a problem signing up for the newsletter. Please try again later.">
+            <input type="email" id="newsletter-email-input" placeholder="email address" title="your email address">
+            <input type="submit" value="Subscribe" id="newsletter-email-submit">
+        </form>
+        <div style="margin-top: 10px; float:right;" class="dno cbt newsletter-status-confirmed">
+            <b>Subscribed!</b>
+        </div>
+        <div style="margin-top: 10px; float:right;" class="dno cbt newsletter-status-unconfirmed">
+            <b>Success!</b> Please click the link in the confirmation email to activate your subscription.
+        </div>
+    </div>
+</div>
+
+<script>
+    StackExchange.ready(function () {
+        StackExchange.newsletterAd.init();
+    });
+
+    $('#anon-newsletter-form').submit(function () {
+        var $form = $(this);
+        var $input = $form.find('#newsletter-email-input');
+        var $submit = $form.find('#newsletter-email-submit');
+        var $container = $form.closest('.newsletter-container');
+
+        var email = $.trim($input.val());
+        if (email.length == 0) {
+            return false;
+        }
+        StackExchange.helpers.addSpinner($form);
+
+        $.ajax({
+            url: '/newsletter/signup/anon',
+            type: 'POST',
+            dataType: 'json',
+            data: { fkey: StackExchange.options.user.fkey, email: email, viaAnonNewsletterAd: true },
+            success: function (data) {
+                if (!data.error && (data.status == 'confirmed' || data.status == 'unconfirmed')) {
+                    $input.attr('disabled', true);
+                    $submit.remove();
+                    $container.find('.newsletter-status-' + data.status).show();
+                }
+                else {
+                    $container.showErrorMessage(data.error || $form.data('error'));
+                }
+            },
+            error: function () {
+                $container.showErrorMessage($form.data('error'));
+            },
+            complete: function () {
+                StackExchange.helpers.removeSpinner($form);
+            }
+        });
+
+        return false;
+    });
+</script>
+
+  
+<a name="34950378"></a>
+<div id="answer-34950378" class="answer" data-answerid="34950378" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="34950378">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">17</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>If you only have to support modern browsers, you can get away with:</p>
+
+<ul>
+<li><em>No</em> images;</li>
+<li><em>Mostly</em> static css;</li>
+<li><em>Nearly</em> no jQuery or Javascript;</li>
+</ul>
+
+<p>You only need to convert the number to a <code>class</code>, e.g. <code>class='stars-score-50'</code>.</p>
+
+<p>First a demo of "rendered" markup:</p>
+
+<p></p><div class="snippet" data-lang="js" data-hide="false">
+<div class="snippet-code">
+<pre class="snippet-code-css lang-css prettyprint prettyprinted"><code><span class="pln">body </span><span class="pun">{</span><span class="pln"> </span><span class="kwd">font-size</span><span class="pun">:</span><span class="pln"> </span><span class="lit">18px</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span><span class="pln">
+
+</span><span class="pun">.</span><span class="pln">stars-container </span><span class="pun">{</span><span class="pln">
+  </span><span class="kwd">position</span><span class="pun">:</span><span class="pln"> relative</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">display</span><span class="pun">:</span><span class="pln"> inline-block</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">color</span><span class="pun">:</span><span class="pln"> transparent</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="pun">.</span><span class="kwd">stars-container</span><span class="pun">:</span><span class="pln">before </span><span class="pun">{</span><span class="pln">
+  </span><span class="kwd">position</span><span class="pun">:</span><span class="pln"> absolute</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">top</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">left</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">content</span><span class="pun">:</span><span class="pln"> </span><span class="str">'★★★★★'</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">color</span><span class="pun">:</span><span class="pln"> lightgray</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="pun">.</span><span class="kwd">stars-container</span><span class="pun">:</span><span class="pln">after </span><span class="pun">{</span><span class="pln">
+  </span><span class="kwd">position</span><span class="pun">:</span><span class="pln"> absolute</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">top</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">left</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">content</span><span class="pun">:</span><span class="pln"> </span><span class="str">'★★★★★'</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">color</span><span class="pun">:</span><span class="pln"> gold</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">overflow</span><span class="pun">:</span><span class="pln"> hidden</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="pun">.</span><span class="kwd">stars-0</span><span class="pun">:</span><span class="pln">after </span><span class="pun">{</span><span class="pln"> </span><span class="kwd">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0%</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="kwd">stars-10</span><span class="pun">:</span><span class="pln">after </span><span class="pun">{</span><span class="pln"> </span><span class="kwd">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">10%</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="kwd">stars-20</span><span class="pun">:</span><span class="pln">after </span><span class="pun">{</span><span class="pln"> </span><span class="kwd">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">20%</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="kwd">stars-30</span><span class="pun">:</span><span class="pln">after </span><span class="pun">{</span><span class="pln"> </span><span class="kwd">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">30%</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="kwd">stars-40</span><span class="pun">:</span><span class="pln">after </span><span class="pun">{</span><span class="pln"> </span><span class="kwd">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">40%</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="kwd">stars-50</span><span class="pun">:</span><span class="pln">after </span><span class="pun">{</span><span class="pln"> </span><span class="kwd">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">50%</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="kwd">stars-60</span><span class="pun">:</span><span class="pln">after </span><span class="pun">{</span><span class="pln"> </span><span class="kwd">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">60%</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="kwd">stars-70</span><span class="pun">:</span><span class="pln">after </span><span class="pun">{</span><span class="pln"> </span><span class="kwd">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">70%</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="kwd">stars-80</span><span class="pun">:</span><span class="pln">after </span><span class="pun">{</span><span class="pln"> </span><span class="kwd">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">80%</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="kwd">stars-90</span><span class="pun">:</span><span class="pln">after </span><span class="pun">{</span><span class="pln"> </span><span class="kwd">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">90%</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="kwd">stars-100</span><span class="pun">:</span><span class="pln">after </span><span class="pun">{</span><span class="pln"> </span><span class="kwd">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">100</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span></code></pre>
+<pre class="snippet-code-html lang-html prettyprint prettyprinted"><code><span class="pln">Within block level elements:
+
+</span><span class="tag">&lt;div&gt;&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"stars-container stars-0"</span><span class="tag">&gt;</span><span class="pln">★★★★★</span><span class="tag">&lt;/span&gt;&lt;/div&gt;</span><span class="pln">
+</span><span class="tag">&lt;div&gt;&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"stars-container stars-10"</span><span class="tag">&gt;</span><span class="pln">★★★★★</span><span class="tag">&lt;/span&gt;&lt;/div&gt;</span><span class="pln">
+</span><span class="tag">&lt;div&gt;&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"stars-container stars-20"</span><span class="tag">&gt;</span><span class="pln">★★★★★</span><span class="tag">&lt;/span&gt;&lt;/div&gt;</span><span class="pln">
+</span><span class="tag">&lt;div&gt;&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"stars-container stars-30"</span><span class="tag">&gt;</span><span class="pln">★★★★★</span><span class="tag">&lt;/span&gt;&lt;/div&gt;</span><span class="pln">
+</span><span class="tag">&lt;div&gt;&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"stars-container stars-40"</span><span class="tag">&gt;</span><span class="pln">★★★★★</span><span class="tag">&lt;/span&gt;&lt;/div&gt;</span><span class="pln">
+</span><span class="tag">&lt;div&gt;&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"stars-container stars-50"</span><span class="tag">&gt;</span><span class="pln">★★★★★</span><span class="tag">&lt;/span&gt;&lt;/div&gt;</span><span class="pln">
+</span><span class="tag">&lt;div&gt;&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"stars-container stars-60"</span><span class="tag">&gt;</span><span class="pln">★★★★★</span><span class="tag">&lt;/span&gt;&lt;/div&gt;</span><span class="pln">
+</span><span class="tag">&lt;div&gt;&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"stars-container stars-70"</span><span class="tag">&gt;</span><span class="pln">★★★★★</span><span class="tag">&lt;/span&gt;&lt;/div&gt;</span><span class="pln">
+</span><span class="tag">&lt;div&gt;&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"stars-container stars-80"</span><span class="tag">&gt;</span><span class="pln">★★★★★</span><span class="tag">&lt;/span&gt;&lt;/div&gt;</span><span class="pln">
+</span><span class="tag">&lt;div&gt;&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"stars-container stars-90"</span><span class="tag">&gt;</span><span class="pln">★★★★★</span><span class="tag">&lt;/span&gt;&lt;/div&gt;</span><span class="pln">
+</span><span class="tag">&lt;div&gt;&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"stars-container stars-100"</span><span class="tag">&gt;</span><span class="pln">★★★★★</span><span class="tag">&lt;/span&gt;&lt;/div&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;p&gt;</span><span class="pln">Or use it in a sentence: </span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"stars-container stars-70"</span><span class="tag">&gt;</span><span class="pln">★★★★★</span><span class="tag">&lt;/span&gt;</span><span class="pln"> (cool, huh?).</span><span class="tag">&lt;/p&gt;</span></code></pre>
+<div class="snippet-result"><div class="snippet-ctas"><button type="button"><span class="icon-play-white _hover"></span> Run code snippet</button><input class="copySnippet btn-secondary" type="button" value="Copy snippet to answer" style="display: none;"><button type="button" class="hideResults btn-clear" style="display: none;">Hide results</button><div class="popout-code"><a class="snippet-expand-link">Expand snippet</a></div></div><div class="snippet-result-code" style="display: none;"><iframe name="8764784b-d86f-e994-dcde-7f4ae6f0fcbc" sandbox="allow-modals allow-scripts" class="snippet-box-edit" frameborder="0" src="./stars_files/saved_resource.html"></iframe></div></div></div>
+</div>
+<p></p>
+
+<p>Then a demo that uses a wee bit of code:</p>
+
+<p></p><div class="snippet" data-lang="js" data-hide="false">
+<div class="snippet-code">
+<pre class="snippet-code-js lang-js prettyprint prettyprinted"><code><span class="pln">$</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+  </span><span class="kwd">function</span><span class="pln"> addScore</span><span class="pun">(</span><span class="pln">score</span><span class="pun">,</span><span class="pln"> $domElement</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    $</span><span class="pun">(</span><span class="str">"&lt;span class='stars-container'&gt;"</span><span class="pun">)</span><span class="pln">
+      </span><span class="pun">.</span><span class="pln">addClass</span><span class="pun">(</span><span class="str">"stars-"</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> score</span><span class="pun">.</span><span class="pln">toString</span><span class="pun">())</span><span class="pln">
+      </span><span class="pun">.</span><span class="pln">text</span><span class="pun">(</span><span class="str">"★★★★★"</span><span class="pun">)</span><span class="pln">
+      </span><span class="pun">.</span><span class="pln">appendTo</span><span class="pun">(</span><span class="pln">$domElement</span><span class="pun">);</span><span class="pln">
+  </span><span class="pun">}</span><span class="pln">
+
+  addScore</span><span class="pun">(</span><span class="lit">70</span><span class="pun">,</span><span class="pln"> $</span><span class="pun">(</span><span class="str">"#fixture"</span><span class="pun">));</span><span class="pln">
+</span><span class="pun">});</span></code></pre>
+<pre class="snippet-code-css lang-css prettyprint prettyprinted"><code><span class="pln">body </span><span class="pun">{</span><span class="pln"> </span><span class="kwd">font-size</span><span class="pun">:</span><span class="pln"> </span><span class="lit">18px</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span><span class="pln">
+
+</span><span class="pun">.</span><span class="pln">stars-container </span><span class="pun">{</span><span class="pln">
+  </span><span class="kwd">position</span><span class="pun">:</span><span class="pln"> relative</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">display</span><span class="pun">:</span><span class="pln"> inline-block</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">color</span><span class="pun">:</span><span class="pln"> transparent</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="pun">.</span><span class="kwd">stars-container</span><span class="pun">:</span><span class="pln">before </span><span class="pun">{</span><span class="pln">
+  </span><span class="kwd">position</span><span class="pun">:</span><span class="pln"> absolute</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">top</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">left</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">content</span><span class="pun">:</span><span class="pln"> </span><span class="str">'★★★★★'</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">color</span><span class="pun">:</span><span class="pln"> lightgray</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="pun">.</span><span class="kwd">stars-container</span><span class="pun">:</span><span class="pln">after </span><span class="pun">{</span><span class="pln">
+  </span><span class="kwd">position</span><span class="pun">:</span><span class="pln"> absolute</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">top</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">left</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">content</span><span class="pun">:</span><span class="pln"> </span><span class="str">'★★★★★'</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">color</span><span class="pun">:</span><span class="pln"> gold</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">overflow</span><span class="pun">:</span><span class="pln"> hidden</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="pun">.</span><span class="kwd">stars-0</span><span class="pun">:</span><span class="pln">after </span><span class="pun">{</span><span class="pln"> </span><span class="kwd">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0%</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="kwd">stars-10</span><span class="pun">:</span><span class="pln">after </span><span class="pun">{</span><span class="pln"> </span><span class="kwd">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">10%</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="kwd">stars-20</span><span class="pun">:</span><span class="pln">after </span><span class="pun">{</span><span class="pln"> </span><span class="kwd">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">20%</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="kwd">stars-30</span><span class="pun">:</span><span class="pln">after </span><span class="pun">{</span><span class="pln"> </span><span class="kwd">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">30%</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="kwd">stars-40</span><span class="pun">:</span><span class="pln">after </span><span class="pun">{</span><span class="pln"> </span><span class="kwd">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">40%</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="kwd">stars-50</span><span class="pun">:</span><span class="pln">after </span><span class="pun">{</span><span class="pln"> </span><span class="kwd">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">50%</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="kwd">stars-60</span><span class="pun">:</span><span class="pln">after </span><span class="pun">{</span><span class="pln"> </span><span class="kwd">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">60%</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="kwd">stars-70</span><span class="pun">:</span><span class="pln">after </span><span class="pun">{</span><span class="pln"> </span><span class="kwd">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">70%</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="kwd">stars-80</span><span class="pun">:</span><span class="pln">after </span><span class="pun">{</span><span class="pln"> </span><span class="kwd">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">80%</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="kwd">stars-90</span><span class="pun">:</span><span class="pln">after </span><span class="pun">{</span><span class="pln"> </span><span class="kwd">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">90%</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="kwd">stars-100</span><span class="pun">:</span><span class="pln">after </span><span class="pun">{</span><span class="pln"> </span><span class="kwd">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">100</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span></code></pre>
+<pre class="snippet-code-html lang-html prettyprint prettyprinted"><code><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"</span><span class="tag">&gt;&lt;/script&gt;</span><span class="pln">
+
+Generated: </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"fixture"</span><span class="tag">&gt;&lt;/div&gt;</span></code></pre>
+<div class="snippet-result"><div class="snippet-ctas"><button type="button"><span class="icon-play-white _hover"></span> Run code snippet</button><input class="copySnippet btn-secondary" type="button" value="Copy snippet to answer" style="display: none;"><button type="button" class="hideResults btn-clear" style="display: none;">Hide results</button><div class="popout-code"><a class="snippet-expand-link">Expand snippet</a></div></div><div class="snippet-result-code" style="display: none;"><iframe name="46fd9c94-a1f2-5ee0-3d84-d848be7a3eb4" sandbox="allow-modals allow-scripts" class="snippet-box-edit" frameborder="0" src="./stars_files/saved_resource(1).html"></iframe></div></div></div>
+</div>
+<p></p>
+
+<p>The biggest downsides of this solution are:</p>
+
+<ol>
+<li>You need the stars inside the element to generate correct width;</li>
+<li>There's no semantic markup, e.g. you'd prefer the <em>score</em> as text inside the element;</li>
+<li>It only allows for as many scores as you'll have classes (because we <em>can't</em> use Javascript to set a precise <code>width</code> on a pseudo-element).</li>
+</ol>
+
+<p>To fix this the solution above can be easily tweaked. The <code>:before</code> and <code>:after</code> bits need to become actual elements in the DOM (so we need some JS for that).</p>
+
+<p>The latter is left as an excercise for the reader.</p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/34950378" title="short permalink to this answer" class="short-link" id="link-post-34950378">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/34950378/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2016-01-22 15:36:31Z" class="relativetime">Jan 22 '16 at 15:36</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/419956/jeroen"><div class="gravatar-wrapper-32"><img src="./stars_files/ab00b6c461dcf852df10c077a0a2b4eb" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/419956/jeroen">Jeroen</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 26,151" dir="ltr">26.2k</span><span title="18 gold badges"><span class="badge1"></span><span class="badgecount">18</span></span><span title="77 silver badges"><span class="badge2"></span><span class="badgecount">77</span></span><span title="127 bronze badges"><span class="badge3"></span><span class="badgecount">127</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-34950378" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-57634069" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Great solutions, thanks for sharing a modern approach!</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/241673/steve" title="1,637 reputation" class="comment-user owner">Steve</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/1987524/turn-a-number-into-star-rating-display-using-jquery-and-css#comment57634069_34950378"><span title="2016-01-22 16:20:51Z" class="relativetime-clean">Jan 22 '16 at 16:20</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-63638121" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">I extended this solution to accommodate for floats and dynamically generated scores that don't fit into 10ths of a 100. <a href="http://codepen.io/cameck/pen/PzpVgz" rel="nofollow noreferrer">Codepen</a> . Thanks for getting me started :D</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/4875295/cameck" title="95 reputation" class="comment-user">cameck</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/1987524/turn-a-number-into-star-rating-display-using-jquery-and-css#comment63638121_34950378"><span title="2016-06-29 14:10:34Z" class="relativetime-clean">Jun 29 '16 at 14:10</span></a></span>
+                        <span class="edited-yes" title="this comment was edited 2 times"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-34950378" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://stackoverflow.com/questions/1987524/turn-a-number-into-star-rating-display-using-jquery-and-css#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="1987540"></a>
+<div id="answer-1987540" class="answer" data-answerid="1987540" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="1987540">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">7</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Why not just have five separate images of a star (empty, quarter-full, half-full, three-quarter-full and full) then just inject the images into your DOM depending on the truncated or rouded value of rating multiplied by 4 (to get a whole numner for the quarters)?</p>
+
+<p>For example, 4.8618164 multiplied by 4 and rounded is 19 which would be four and three quarter stars.</p>
+
+<p>Alternatively (if you're lazy like me), just have one image selected from 21 (0 stars through 5 stars in one-quarter increments) and select the single image based on the aforementioned value. Then it's just one calculation followed by an image change in the DOM (rather than trying to change five different images).</p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/1987540" title="short permalink to this answer" class="short-link" id="link-post-1987540">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/1987540/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="http://stackoverflow.com/posts/1987540/revisions" title="show all edits to this post">edited <span title="2010-01-01 00:41:32Z" class="relativetime">Jan 1 '10 at 0:41</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        
+        <div class="-flair">
+            
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2010-01-01 00:06:39Z" class="relativetime">Jan 1 '10 at 0:06</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/14860/paxdiablo"><div class="gravatar-wrapper-32"><img src="./stars_files/vXG1F.png" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/14860/paxdiablo">paxdiablo</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 507,844" dir="ltr">508k</span><span title="123 gold badges"><span class="badge1"></span><span class="badgecount">123</span></span><span title="1010 silver badges"><span class="badge2"></span><span class="badgecount">1010</span></span><span title="1464 bronze badges"><span class="badge3"></span><span class="badgecount">1464</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-1987540" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-1904439" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Sigh, beat me to it.</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/125449/dirk" title="2,629 reputation" class="comment-user">Dirk</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/1987524/turn-a-number-into-star-rating-display-using-jquery-and-css#comment1904439_1987540"><span title="2010-01-01 00:07:48Z" class="relativetime-clean">Jan 1 '10 at 0:07</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-1987540" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://stackoverflow.com/questions/1987524/turn-a-number-into-star-rating-display-using-jquery-and-css#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="29324953"></a>
+<div id="answer-29324953" class="answer" data-answerid="29324953" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="29324953">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">5</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>I ended up going totally JS-free to avoid client-side render lag.  To accomplish that, I generate HTML like this:</p>
+
+<pre class="default prettyprint prettyprinted"><code><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"stars"</span><span class="pln"> </span><span class="atn">title</span><span class="pun">=</span><span class="atv">"{value as decimal}"</span><span class="tag">&gt;</span><span class="pln">
+    </span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">style</span><span class="pun">=</span><span class="atv">"</span><span class="pln">width</span><span class="pun">={</span><span class="pln">value</span><span class="pun">/</span><span class="lit">5</span><span class="pun">*</span><span class="lit">100</span><span class="pun">}%;</span><span class="atv">"</span><span class="tag">/&gt;</span><span class="pln">
+</span><span class="tag">&lt;/span&gt;</span></code></pre>
+
+<p>To help with accessibility, I even add the raw rating value in the title attribute.</p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/29324953" title="short permalink to this answer" class="short-link" id="link-post-29324953">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/29324953/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2015-03-29 02:22:02Z" class="relativetime">Mar 29 '15 at 2:22</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/909921/tim-schmidt"><div class="gravatar-wrapper-32"><img src="./stars_files/957189c82306764bfe191fa7d58213a3" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/909921/tim-schmidt">Tim Schmidt</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">720</span><span title="10 silver badges"><span class="badge2"></span><span class="badgecount">10</span></span><span title="17 bronze badges"><span class="badge3"></span><span class="badgecount">17</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-29324953" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-29324953" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://stackoverflow.com/questions/1987524/turn-a-number-into-star-rating-display-using-jquery-and-css#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="39220717"></a>
+<div id="answer-39220717" class="answer" data-answerid="39220717" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="39220717">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">3</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p><strong>Try this jquery function</strong></p>
+
+<pre class="default prettyprint prettyprinted"><code><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="tag">&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"stars"</span><span class="pln"> </span><span class="atn">data-rating</span><span class="pun">=</span><span class="atv">"4"</span><span class="pln"> </span><span class="atn">data-num-stars</span><span class="pun">=</span><span class="atv">"5"</span><span class="pln"> </span><span class="tag">&gt;&lt;/span&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;script&gt;</span><span class="pln">
+    $.fn.stars = function() {
+        return $(this).each(function() {
+
+            var rating = $(this).data("rating");
+
+            var numStars = $(this).data("numStars");
+
+            var fullStar = new Array(Math.floor(rating + 1)).join('</span><span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"fa fa-star"</span><span class="tag">&gt;&lt;/i&gt;</span><span class="pln">');
+
+            var halfStar = ((rating%1) !== 0) ? '</span><span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"fa fa-star-half-empty"</span><span class="tag">&gt;&lt;/i&gt;</span><span class="pln">': '';
+
+            var noStar = new Array(Math.floor(numStars + 1 - rating)).join('</span><span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"fa fa-star-o"</span><span class="tag">&gt;&lt;/i&gt;</span><span class="pln">');
+
+            $(this).html(fullStar + halfStar + noStar);
+
+        });
+    }
+
+    $('.stars').stars();</span></code></pre>
+
+<p><a href="./stars_files/1MdLS.png" rel="nofollow noreferrer"><img src="./stars_files/1MdLS.png" alt="Screenshot"></a></p>
+
+<p>FontAwesome CSS</p>
+
+<p>You can download FontAwesome at <a href="http://fontawesome.io/" rel="nofollow noreferrer">http://fontawesome.io/</a></p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/39220717" title="short permalink to this answer" class="short-link" id="link-post-39220717">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/39220717/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2016-08-30 06:55:54Z" class="relativetime">Aug 30 '16 at 6:55</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/5119214/rajasekar-d"><div class="gravatar-wrapper-32"><img src="./stars_files/48d8fc7570b3969ad5032b83a7a4dff4" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/5119214/rajasekar-d">Rajasekar D</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">64</span><span title="6 bronze badges"><span class="badge3"></span><span class="badgecount">6</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-39220717" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-39220717" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://stackoverflow.com/questions/1987524/turn-a-number-into-star-rating-display-using-jquery-and-css#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="29309286"></a>
+<div id="answer-29309286" class="answer" data-answerid="29309286" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="29309286">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">1</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>using jquery without prototype, update the js code to </p>
+
+<pre class="default prettyprint prettyprinted"><code><span class="pln">$</span><span class="pun">(</span><span class="pln"> </span><span class="str">".stars"</span><span class="pln"> </span><span class="pun">).</span><span class="pln">each</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> 
+    </span><span class="com">// Get the value</span><span class="pln">
+    </span><span class="kwd">var</span><span class="pln"> val </span><span class="pun">=</span><span class="pln"> $</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">data</span><span class="pun">(</span><span class="str">"rating"</span><span class="pun">);</span><span class="pln">
+    </span><span class="com">// Make sure that the value is in 0 - 5 range, multiply to get width</span><span class="pln">
+    </span><span class="kwd">var</span><span class="pln"> size </span><span class="pun">=</span><span class="pln"> </span><span class="typ">Math</span><span class="pun">.</span><span class="pln">max</span><span class="pun">(</span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="pun">(</span><span class="typ">Math</span><span class="pun">.</span><span class="pln">min</span><span class="pun">(</span><span class="lit">5</span><span class="pun">,</span><span class="pln"> val</span><span class="pun">)))</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> </span><span class="lit">16</span><span class="pun">;</span><span class="pln">
+    </span><span class="com">// Create stars holder</span><span class="pln">
+    </span><span class="kwd">var</span><span class="pln"> $span </span><span class="pun">=</span><span class="pln"> $</span><span class="pun">(</span><span class="str">'&lt;span /&gt;'</span><span class="pun">).</span><span class="pln">width</span><span class="pun">(</span><span class="pln">size</span><span class="pun">);</span><span class="pln">
+    </span><span class="com">// Replace the numerical value with stars</span><span class="pln">
+    $</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">html</span><span class="pun">(</span><span class="pln">$span</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">});</span></code></pre>
+
+<p>I also added a data attribute by the name of data-rating in the span.</p>
+
+<pre class="default prettyprint prettyprinted"><code><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"stars"</span><span class="pln"> </span><span class="atn">data-rating</span><span class="pun">=</span><span class="atv">"4"</span><span class="pln"> </span><span class="tag">&gt;&lt;/span&gt;</span></code></pre>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/29309286" title="short permalink to this answer" class="short-link" id="link-post-29309286">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/29309286/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="http://stackoverflow.com/posts/29309286/revisions" title="show all edits to this post">edited <span title="2015-03-27 20:16:11Z" class="relativetime">Mar 27 '15 at 20:16</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        
+        <div class="-flair">
+            
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2015-03-27 20:02:49Z" class="relativetime">Mar 27 '15 at 20:02</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/1083993/galuga"><div class="gravatar-wrapper-32"><img src="./stars_files/364e901b57f30bfed240b1a2531ec3af" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/1083993/galuga">Galuga</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">435</span><span title="2 silver badges"><span class="badge2"></span><span class="badgecount">2</span></span><span title="6 bronze badges"><span class="badge3"></span><span class="badgecount">6</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-29309286" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-29309286" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://stackoverflow.com/questions/1987524/turn-a-number-into-star-rating-display-using-jquery-and-css#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+				    <div class="question-status">
+        <h2>                    <b>protected</b> by <a href="http://stackoverflow.com/users/-1/community">Community</a><span class="mod-flair" title="moderator">♦</span> <span dir="ltr"><span title="2013-01-08 20:27:45Z" class="relativetime">Jan 8 '13 at 20:27</span></span>
+</h2>
+        <p>
+Thank you for your interest in this question. 
+Because it has attracted low-quality or spam answers that had to be removed, posting an answer now requires 10 <a href="http://stackoverflow.com/help/whats-reputation">reputation</a> on this site (the <a href="http://stackoverflow.com/help/privileges/new-user">association bonus does not count</a>).
+<br><br>
+Would you like to answer one of these <a href="http://stackoverflow.com/unanswered?fromProtectedNotice=true">unanswered questions</a> instead?
+</p>
+    </div>
+
+
+
+
+
+						<h2 class="bottom-notice" data-loc="1">
+Not the answer you're looking for?							Browse other questions tagged <a href="http://stackoverflow.com/questions/tagged/javascript" class="post-tag" title="show questions tagged &#39;javascript&#39;" rel="tag">javascript</a> <a href="http://stackoverflow.com/questions/tagged/jquery" class="post-tag" title="show questions tagged &#39;jquery&#39;" rel="tag">jquery</a> <a href="http://stackoverflow.com/questions/tagged/css" class="post-tag" title="show questions tagged &#39;css&#39;" rel="tag">css</a> <a href="http://stackoverflow.com/questions/tagged/rating" class="post-tag" title="show questions tagged &#39;rating&#39;" rel="tag">rating</a>  or <a href="http://stackoverflow.com/questions/ask">ask your own question</a>.						</h2>
+			</div>
+		</div>
+				<div id="sidebar" class="show-votes">
+						    <div class="module question-stats">
+			        <table id="qinfo">
+			            <tbody><tr>
+			                <td>
+			                    <p class="label-key">asked</p>
+			                </td>
+			                <td style="padding-left: 10px">
+			                    <p class="label-key" title="2009-12-31 23:56:25Z"><b>7 years ago</b></p>
+			                </td>
+			            </tr>
+			            <tr>
+			                <td>
+			                    <p class="label-key">viewed</p>
+			                </td>
+
+			                <td style="padding-left: 10px">
+			                    <p class="label-key">
+			                        <b>72927 times</b>
+			                    </p>
+			                </td>
+			            </tr>
+			                <tr>
+			                    <td>
+			                        <p class="label-key">active</p>
+			                    </td>
+			                    <td style="padding-left: 10px">
+			                        <p class="label-key"><b><a href="http://stackoverflow.com/questions/1987524/turn-a-number-into-star-rating-display-using-jquery-and-css?lastactivity" class="lastactivity-link" title="2016-08-30 06:55:54Z">4 months ago</a></b></p>
+			                    </td>
+			                </tr>
+			        </tbody></table>
+			    </div>
+			<div class="module community-bulletin" data-tracker="cb=1">
+    <div class="related">
+                <div class="bulletin-title">
+                    Blog
+                </div>
+                <hr>
+    <div class="spacer">
+        <div class="bulletin-item-type">
+                <a href="http://stackoverflow.blog/2017/01/Stack-Overflow-Podcast-99-The-Requested-Operation-Requires-Elevation/?cb=1" class="question-hyperlink">
+<div class="favicon favicon-stackexchangemeta" title="Meta Stack Exchange"></div>                </a>
+            </div>
+                <div class="bulletin-item-content">
+                    <a href="http://stackoverflow.blog/2017/01/Stack-Overflow-Podcast-99-The-Requested-Operation-Requires-Elevation/?cb=1" class="question-hyperlink">Podcast #99 - The Requested Operation Requires Elevation</a>
+                </div>
+                <br class="cbt">
+            </div>
+    </div>
+</div>			
+			<div class="clc-jobs-multi orange tagged" id="hireme"><a class="top " href="https://stackoverflow.com/jobs?location=San%20Francisco%2C%20California%2C%20%2C%20" target="_blank" data-clc-click="https://clc.stackoverflow.com/click?an=43TTzJp72OWKB_uNgOBQJiYGBgYWBhBQZz4SLMeQH63BwHAciBmYGFIOFHCkWjIxgjlAZfMFzBgY1gIxCxMD44HX3NxWXsfF7Rl5i0qTKnXz83SLEjNziuWLgQoEzYFamBiYDgiZMFk5Zsnaz3-jy8BQpsfAwAfSqjRX2OrgQQd0rfP9TRkYngKxEBMD8wHbW8JW3g9C0RUxHAlZ9uDnxTnL9tsCAA&amp;cr=10439&amp;ct=1&amp;url=https%3A%2F%2Fstackoverflow.com%2Fjobs%3Flocation%3DSan%2520Francisco%252C%2520California%252C%2520%252C%2520&amp;sig=GblBg7n_sUk3Jg"><span>Jobs near you</span></a><div class="middle"><ul class="jobs"><li class="&quot;clc-dismissable&quot;"><div class="job-wrap"><a class="job" title="Full Stack Engineer at Remix. Click to learn more." href="https://stackoverflow.com/jobs/127850/full-stack-engineer-remix" target="_blank" data-clc-click="https://clc.stackoverflow.com/click?an=43TTzJp72OWKB_uNgOBQJiYGBgYWBhBQZz4SLMeQH63BwHAciBmYGFIOFHCkWjIxgjlAZfMFzBgY1gIxCxMD44HX3NxWXsfF7Rl5i0qTKnXz83SLEjNziuWLgQoEzYFamBiYDgiZMFk5Zsnaz3-jy8BQpsfAwAfSqjRX2OrgQQd0rfP9TRkYngKxEBMD8wHbW8JW3g9C0RUxHAlZ9uDnxTnL9tsCAA&amp;cr=13997&amp;ct=0&amp;url=https%3A%2F%2Fstackoverflow.com%2Fjobs%2F127850%2Ffull-stack-engineer-remix&amp;sig=ac3zyZhmOhq1-w"><div class="title">Full Stack Engineer</div><div><span class="company">Remix</span><span class="location">San Francisco, CA</span></div><div class="opts"><span class="opt salary">$100,000 - $150,000</span></div><span class="post-tag highlight">ruby-on-rails</span><span class="post-tag">python</span></a></div><a class="clc-dismiss" data-clc-click="https://clc.stackoverflow.com/click?an=43TTzJp72OWKB_uNgOBQJiYGBgYWBhBQZz4SLMeQH63BwHAciBmYGFIOFHCkWjIxgjlAZfMFzBgY1gIxCxMD44HX3NxWXsfF7Rl5i0qTKnXz83SLEjNziuWLgQoEzYFamBiYDgiZMFk5Zsnaz3-jy8BQpsfAwAfSqjRX2OrgQQd0rfP9TRkYngKxEBMD8wHbW8JW3g9C0RUxHAlZ9uDnxTnL9tsCAA&amp;cr=13997&amp;ct=-1&amp;sig=pzSrsgjClDgwrA" data-clc-meta-target="-1"><span class="clc-tooltip above-left">dismiss this job</span></a></li><li class="&quot;clc-dismissable&quot;"><div class="job-wrap"><a class="job" title="Lead Software Developer (SF) at ThoughtWorks. Click to learn more." href="https://stackoverflow.com/jobs/125202/lead-software-developer-sf-thoughtworks" target="_blank" data-clc-click="https://clc.stackoverflow.com/click?an=43TTzJp72OWKB_uNgOBQJiYGBgYWBhBQZz4SLMeQH63BwHAciBmYGFIOFHCkWjIxgjlAZfMFzBgY1gIxCxMD44HX3NxWXsfF7Rl5i0qTKnXz83SLEjNziuWLgQoEzYFamBiYDgiZMFk5Zsnaz3-jy8BQpsfAwAfSqjRX2OrgQQd0rfP9TRkYngKxEBMD8wHbW8JW3g9C0RUxHAlZ9uDnxTnL9tsCAA&amp;cr=14097&amp;ct=0&amp;url=https%3A%2F%2Fstackoverflow.com%2Fjobs%2F125202%2Flead-software-developer-sf-thoughtworks&amp;sig=hT1K8m0lFvMtRw"><div class="title">Lead Software Developer (SF)</div><div><span class="company">ThoughtWorks</span><span class="location">San Francisco, CA</span></div><div class="opts"><span class="opt relocate">Relocation</span></div><span class="post-tag">java</span><span class="post-tag">ruby</span></a></div><a class="clc-dismiss" data-clc-click="https://clc.stackoverflow.com/click?an=43TTzJp72OWKB_uNgOBQJiYGBgYWBhBQZz4SLMeQH63BwHAciBmYGFIOFHCkWjIxgjlAZfMFzBgY1gIxCxMD44HX3NxWXsfF7Rl5i0qTKnXz83SLEjNziuWLgQoEzYFamBiYDgiZMFk5Zsnaz3-jy8BQpsfAwAfSqjRX2OrgQQd0rfP9TRkYngKxEBMD8wHbW8JW3g9C0RUxHAlZ9uDnxTnL9tsCAA&amp;cr=14097&amp;ct=-1&amp;sig=2OJJJfSkdKy-hA" data-clc-meta-target="-1"><span class="clc-tooltip above-left">dismiss this job</span></a></li><li class="&quot;clc-dismissable&quot;"><div class="job-wrap"><a class="job" title="Sr Ruby on Rails Engineer at Zoomer. Click to learn more." href="https://stackoverflow.com/jobs/94516/sr-ruby-on-rails-engineer-zoomer" target="_blank" data-clc-click="https://clc.stackoverflow.com/click?an=43TTzJp72OWKB_uNgOBQJiYGBgYWBhBQZz4SLMeQH63BwHAciBmYGFIOFHCkWjIxgjlAZfMFzBgY1gIxCxMD44HX3NxWXsfF7Rl5i0qTKnXz83SLEjNziuWLgQoEzYFamBiYDgiZMFk5Zsnaz3-jy8BQpsfAwAfSqjRX2OrgQQd0rfP9TRkYngKxEBMD8wHbW8JW3g9C0RUxHAlZ9uDnxTnL9tsCAA&amp;cr=11894&amp;ct=0&amp;url=https%3A%2F%2Fstackoverflow.com%2Fjobs%2F94516%2Fsr-ruby-on-rails-engineer-zoomer&amp;sig=gltYMZ4hk45Xfg"><div class="title">Sr Ruby on Rails Engineer</div><div><span class="company">Zoomer</span><span class="location">San Francisco, CA</span></div><div class="opts"><span class="opt remote">Remote</span></div><span class="post-tag highlight">ruby-on-rails</span><span class="post-tag">javascript</span></a></div><a class="clc-dismiss" data-clc-click="https://clc.stackoverflow.com/click?an=43TTzJp72OWKB_uNgOBQJiYGBgYWBhBQZz4SLMeQH63BwHAciBmYGFIOFHCkWjIxgjlAZfMFzBgY1gIxCxMD44HX3NxWXsfF7Rl5i0qTKnXz83SLEjNziuWLgQoEzYFamBiYDgiZMFk5Zsnaz3-jy8BQpsfAwAfSqjRX2OrgQQd0rfP9TRkYngKxEBMD8wHbW8JW3g9C0RUxHAlZ9uDnxTnL9tsCAA&amp;cr=11894&amp;ct=-1&amp;sig=klFGWpovogwEqA" data-clc-meta-target="-1"><span class="clc-tooltip above-left">dismiss this job</span></a></li><li class="&quot;clc-dismissable&quot;"><div class="job-wrap"><a class="job" title="Product Manager at Braintree. Click to learn more." href="https://stackoverflow.com/jobs/127694/product-manager-braintree" target="_blank" data-clc-click="https://clc.stackoverflow.com/click?an=43TTzJp72OWKB_uNgOBQJiYGBgYWBhBQZz4SLMeQH63BwHAciBmYGFIOFHCkWjIxgjlAZfMFzBgY1gIxCxMD44HX3NxWXsfF7Rl5i0qTKnXz83SLEjNziuWLgQoEzYFamBiYDgiZMFk5Zsnaz3-jy8BQpsfAwAfSqjRX2OrgQQd0rfP9TRkYngKxEBMD8wHbW8JW3g9C0RUxHAlZ9uDnxTnL9tsCAA&amp;cr=13797&amp;ct=0&amp;url=https%3A%2F%2Fstackoverflow.com%2Fjobs%2F127694%2Fproduct-manager-braintree&amp;sig=rw7nGQ3mfAt9IA"><div class="title">Product Manager</div><div><span class="company">Braintree</span><span class="location">San Francisco, CA</span></div><div class="opts"><span class="opt relocate">Relocation</span></div><span class="post-tag">agile</span><span class="post-tag highlight">ruby-on-rails</span></a></div><a class="clc-dismiss" data-clc-click="https://clc.stackoverflow.com/click?an=43TTzJp72OWKB_uNgOBQJiYGBgYWBhBQZz4SLMeQH63BwHAciBmYGFIOFHCkWjIxgjlAZfMFzBgY1gIxCxMD44HX3NxWXsfF7Rl5i0qTKnXz83SLEjNziuWLgQoEzYFamBiYDgiZMFk5Zsnaz3-jy8BQpsfAwAfSqjRX2OrgQQd0rfP9TRkYngKxEBMD8wHbW8JW3g9C0RUxHAlZ9uDnxTnL9tsCAA&amp;cr=13797&amp;ct=-1&amp;sig=o85z_99ilO8r1w" data-clc-meta-target="-1"><span class="clc-tooltip above-left">dismiss this job</span></a></li></ul></div><div class="bottom"><a class="city" href="https://stackoverflow.com/jobs?location=San%20Francisco%2C%20California%2C%20%2C%20" data-clc-click="https://clc.stackoverflow.com/click?an=43TTzJp72OWKB_uNgOBQJiYGBgYWBhBQZz4SLMeQH63BwHAciBmYGFIOFHCkWjIxgjlAZfMFzBgY1gIxCxMD44HX3NxWXsfF7Rl5i0qTKnXz83SLEjNziuWLgQoEzYFamBiYDgiZMFk5Zsnaz3-jy8BQpsfAwAfSqjRX2OrgQQd0rfP9TRkYngKxEBMD8wHbW8JW3g9C0RUxHAlZ9uDnxTnL9tsCAA&amp;cr=10439&amp;ct=2&amp;url=https%3A%2F%2Fstackoverflow.com%2Fjobs%3Flocation%3DSan%2520Francisco%252C%2520California%252C%2520%252C%2520&amp;sig=8Rs2d7enEHyj1w">More jobs near San Francisco…</a></div><img src="./stars_files/impression.gif" class="impression" style="display: none;"></div>
+        <script>
+window.clcfl_request = 'Av04w5zDRNQIAAAAAMRTHgACAAAAAgAAAAAxAAAAfGphdmFzY3JpcHR8anF1ZXJ5fGNzc3xyYXRpbmd8eC1wZXJzb25hLWZyb250ZW5kfADLub35flytv0Wc';
+;(function(n){var t,r,i;try{if(typeof[].indexOf!="function")return;if(window.attachEvent&&!window.addEventListener)return;if(n.allowed[0]!=="*"&&n.allowed.indexOf(location.hostname)===-1)return;t=window;t.clc=t.clc||{};r=t.clc_request||t.clcfl_request;r||console.warn("clc_request missing");t.clc.init=t.clc.init||[];t.clc.init.push(function(n){return n.load()});t.clc.options=n;i=document.createElement("script");i.async=!0;i.src=n.lib;document.body.appendChild(i)}catch(u){console.error("[clc] Error in loader:",u)}}).call(null, {"azw":true,"kt":2000,"tto":true,"autoload":true,"d":{"sb":["hireme","clc-sb"],"tlb":["careers1","clc-tlb"],"mlb":["careers3","clc-mlb"]},"allowed":["stackoverflow.com","serverfault.com","blog.codinghorror.com","talent.stackoverflow.com"],"h":"clc.stackoverflow.com","u":"//clc.stackoverflow.com/markup.js","lib":"//cdn.sstatic.net/clc/clc.min.js?v=1492847a8483"});        </script>
+			
+
+            <div class="module sidebar-linked">
+	<h4 id="h-linked">Linked</h4>
+	<div class="linked" data-tracker="lq=1">
+
+<div class="spacer">
+	<a href="http://stackoverflow.com/q/2324446?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">19</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/2324446/how-to-build-a-basic-and-simple-5-star-rating-system?noredirect=1&amp;lq=1" class="question-hyperlink">How to build a basic and simple 5-star rating system?</a>
+</div>
+<div class="spacer">
+	<a href="http://stackoverflow.com/q/4353591?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">0</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/4353591/star-rating-system-jquery?noredirect=1&amp;lq=1" class="question-hyperlink">Star Rating System (jQuery)</a>
+</div>
+<div class="spacer">
+	<a href="http://stackoverflow.com/q/28170314?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">1</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/28170314/converting-values-into-star-rating-using-jquery?noredirect=1&amp;lq=1" class="question-hyperlink">Converting values into star rating using JQuery</a>
+</div>
+<div class="spacer">
+	<a href="http://stackoverflow.com/q/7350096?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">0</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/7350096/populating-a-five-star-system-in-javascript-with-half-stars?noredirect=1&amp;lq=1" class="question-hyperlink">Populating a five star system in JavaScript with half stars</a>
+</div>
+<div class="spacer">
+	<a href="http://stackoverflow.com/q/24319444?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">-6</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/24319444/how-to-calculate-star-rating?noredirect=1&amp;lq=1" class="question-hyperlink">How to calculate star rating?</a>
+</div>
+<div class="spacer">
+	<a href="http://stackoverflow.com/q/2156561?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">0</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/2156561/any-way-to-compress-this-jquery-5-star-rating-function?noredirect=1&amp;lq=1" class="question-hyperlink">Any way to compress this jquery 5 star rating function?</a>
+</div>
+<div class="spacer">
+	<a href="http://stackoverflow.com/q/2004642?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">0</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/2004642/jquery-php-how-to-display-and-get-the-average-rate-and-votes-casted?noredirect=1&amp;lq=1" class="question-hyperlink">JQuery &amp; PHP - How to display and get the average rate and votes casted?</a>
+</div>
+<div class="spacer">
+	<a href="http://stackoverflow.com/q/29530680?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">1</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/29530680/how-can-i-do-the-hover-effect-like-a-rating-star-in-this-code-css-html?noredirect=1&amp;lq=1" class="question-hyperlink">how can I do the hover effect like a rating star in this code css html?</a>
+</div>
+<div class="spacer">
+	<a href="http://stackoverflow.com/q/12347038?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">0</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/12347038/jquery-star-rating-and-binding-with-repeater-control?noredirect=1&amp;lq=1" class="question-hyperlink">jQuery star rating and binding with repeater control</a>
+</div>
+<div class="spacer">
+	<a href="http://stackoverflow.com/q/16351822?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">0</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/16351822/how-to-work-jquery-rating-stars-using-in-java-application?noredirect=1&amp;lq=1" class="question-hyperlink">How to Work Jquery Rating Stars Using in Java Application?</a>
+</div>					<div class="spacer more">
+				<a href="http://stackoverflow.com/questions/linked/1987524?lq=1">see more linked questions…</a>
+			</div>
+	</div>
+</div>
+
+				<div class="module sidebar-related">
+					<h4 id="h-related">Related</h4>
+                    <div class="related js-gps-related-questions" data-tracker="rq=1">
+                        <div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/1551016?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">7</div></a><a href="http://stackoverflow.com/questions/1551016/star-rating-widget-for-jquery-ui?rq=1" class="question-hyperlink">Star Rating widget for jQuery UI</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/5301849?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted default">1</div></a><a href="http://stackoverflow.com/questions/5301849/jquery-star-rating-raty-plugin-bug?rq=1" class="question-hyperlink">jquery star rating - raty plugin bug</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/7011653?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">0</div></a><a href="http://stackoverflow.com/questions/7011653/need-help-using-acts-as-rateable-with-jquery-star-rating?rq=1" class="question-hyperlink">Need help using acts_as_rateable with jquery star rating</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/11617956?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">0</div></a><a href="http://stackoverflow.com/questions/11617956/jquery-rating-stars-display-at-top-when-put-in-for-loop?rq=1" class="question-hyperlink">jquery rating stars display at top when put in for loop</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/24620878?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted default">0</div></a><a href="http://stackoverflow.com/questions/24620878/pure-css-star-rating-enforce-non-zero-result?rq=1" class="question-hyperlink">Pure CSS Star Rating - Enforce Non-Zero Result</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/27337174?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted default">0</div></a><a href="http://stackoverflow.com/questions/27337174/i-use-pure-css-for-star-rating-how-can-i-default-rating-value?rq=1" class="question-hyperlink">I use pure css for star rating. How can I default rating value?</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/28170314?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">1</div></a><a href="http://stackoverflow.com/questions/28170314/converting-values-into-star-rating-using-jquery?rq=1" class="question-hyperlink">Converting values into star rating using JQuery</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/30147895?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">5</div></a><a href="http://stackoverflow.com/questions/30147895/simple-jquery-star-rating-and-angularjs-ng-repeat?rq=1" class="question-hyperlink">Simple jQuery Star Rating and AngularJs (ng-repeat)</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/38069929?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted default">0</div></a><a href="http://stackoverflow.com/questions/38069929/display-message-for-each-rating-stars?rq=1" class="question-hyperlink">Display message for each rating stars</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/40399446?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted default">0</div></a><a href="http://stackoverflow.com/questions/40399446/star-rating-system-jquery?rq=1" class="question-hyperlink">Star rating system jquery</a></div>
+                    </div>
+				</div>
+            
+<div id="hot-network-questions" class="module">
+    <h4>
+        <a href="http://stackexchange.com/questions?tab=hot" class="js-gps-track" data-gps-track="posts_hot_network.click({ item_type:1, location:11 })">
+            Hot Network Questions
+        </a>
+    </h4>
+    <ul>
+            <li>
+                <div class="favicon favicon-skeptics" title="Skeptics Stack Exchange"></div><a href="http://skeptics.stackexchange.com/questions/36854/did-steve-mnuchins-onewest-bank-foreclose-on-a-90-year-old-womans-house-after" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:212 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Did Steve Mnuchin's OneWest Bank foreclose on a 90-year-old woman's house after a 27-cent payment error?
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-mathoverflow" title="MathOverflow"></div><a href="http://mathoverflow.net/questions/260411/inner-product-of-columns-of-a-matrix" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:504 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Inner product of columns of a matrix
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-english" title="English Language &amp; Usage Stack Exchange"></div><a href="http://english.stackexchange.com/questions/369635/request-bragging-boasting-but-all-made-up-of-lies" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:97 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    request: bragging &amp; boasting but all made up of lies
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-worldbuilding" title="Worldbuilding Stack Exchange"></div><a href="http://worldbuilding.stackexchange.com/questions/68793/for-fiction-purposes-are-there-any-reserved-or-non-existent-top-level-domains-w" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:579 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    For fiction purposes, are there any reserved or non-existent top-level-domains writers can use in stories?
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-linguistics" title="Linguistics Stack Exchange"></div><a href="http://linguistics.stackexchange.com/questions/20915/is-ipa-machine-readable" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:312 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is IPA machine-readable?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-tex" title="TeX - LaTeX Stack Exchange"></div><a href="http://tex.stackexchange.com/questions/350265/how-can-i-write-this-text-aligned" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:85 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How can I write this text aligned?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-chemistry" title="Chemistry Stack Exchange"></div><a href="http://chemistry.stackexchange.com/questions/67014/what-kind-of-product-is-the-product-in-ionic-product-of-water" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:431 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What kind of 'product' is the 'product' in 'ionic product of water'?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-writers" title="Writers Stack Exchange"></div><a href="http://writers.stackexchange.com/questions/26257/how-many-rewrites-should-a-writer-expect-for-a-novel" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:166 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How many rewrites should a writer expect for a novel?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-workplace" title="The Workplace Stack Exchange"></div><a href="http://workplace.stackexchange.com/questions/83451/can-i-talk-to-rubber-duck-at-work" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:423 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Can I talk to rubber duck at work?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-music" title="Music: Practice &amp; Theory Stack Exchange"></div><a href="http://music.stackexchange.com/questions/52596/the-loudest-acoustic-instrument" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:240 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    The loudest acoustic instrument
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-ell" title="English Language Learners Stack Exchange"></div><a href="http://ell.stackexchange.com/questions/116897/how-to-use-ask-in-a-dialogue-twice" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:481 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to use ask in a dialogue twice?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-scifi" title="Science Fiction &amp; Fantasy Stack Exchange"></div><a href="http://scifi.stackexchange.com/questions/151007/do-muggleborn-wizards-have-a-higher-chance-of-giving-birth-to-squibs" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:186 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Do Muggleborn wizards have a higher chance of giving birth to Squibs?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-aviation" title="Aviation Stack Exchange"></div><a href="http://aviation.stackexchange.com/questions/34945/why-are-the-top-speeds-for-jet-engines-higher-than-for-propellers" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:528 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why are the top speeds for jet engines higher than for propellers?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-academia" title="Academia Stack Exchange"></div><a href="http://academia.stackexchange.com/questions/83628/asking-questions-in-class-how-can-i-exit-a-qa-when-i-havent-really-understo" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:415 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Asking questions in class: how can I "exit" a Q&amp;A when I haven't really understood
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-scifi" title="Science Fiction &amp; Fantasy Stack Exchange"></div><a href="http://scifi.stackexchange.com/questions/151017/whats-an-odn-line-and-what-does-odn-stand-for" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:186 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What's an ODN line, and what does ODN stand for?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-english" title="English Language &amp; Usage Stack Exchange"></div><a href="http://english.stackexchange.com/questions/369932/sister-site-vs-brother-site" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:97 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    "Sister site" vs "brother site"
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-skeptics" title="Skeptics Stack Exchange"></div><a href="http://skeptics.stackexchange.com/questions/36837/did-more-people-use-the-dc-metro-transit-system-on-the-day-of-trumps-inaugurati" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:212 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Did more people use the DC Metro transit system on the day of Trump's inauguration than on the day of Obama's second inauguration (in 2013)?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-codegolf" title="Programming Puzzles &amp; Code Golf Stack Exchange"></div><a href="http://codegolf.stackexchange.com/questions/107964/output-programming-language-name" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:200 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Output programming language name
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-skeptics" title="Skeptics Stack Exchange"></div><a href="http://skeptics.stackexchange.com/questions/36827/did-the-potus-twitter-account-use-a-picture-from-obamas-inauguration-for-its-c" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:212 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Did the @POTUS Twitter account use a picture from Obama's inauguration for its cover image?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-scifi" title="Science Fiction &amp; Fantasy Stack Exchange"></div><a href="http://scifi.stackexchange.com/questions/150968/who-are-these-feminists" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:186 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Who are these feminists?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-math" title="Mathematics Stack Exchange"></div><a href="http://math.stackexchange.com/questions/2112148/differential-equation-separable" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:69 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Differential equation / Separable
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-workplace" title="The Workplace Stack Exchange"></div><a href="http://workplace.stackexchange.com/questions/83517/is-it-acceptable-to-make-a-lunch-calendar-appointment" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:423 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is it acceptable to make a lunch calendar appointment?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-diy" title="Home Improvement Stack Exchange"></div><a href="http://diy.stackexchange.com/questions/107256/how-can-i-locate-a-wall-from-a-crawl-space" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:73 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How can I locate a wall from a crawl space?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-workplace" title="The Workplace Stack Exchange"></div><a href="http://workplace.stackexchange.com/questions/83595/does-returning-to-a-previous-employer-look-bad-on-a-resume" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:423 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Does returning to a previous employer look bad on a resume?
+                </a>
+
+            </li>
+    </ul>
+
+        
+</div>
+		</div>
+	
+<div id="feed-link">
+    <div id="feed-link-text">
+        <a href="http://stackoverflow.com/feeds/question/1987524" title="feed of this question and its answers">
+            <span class="feed-icon"></span>question feed
+        </a>
+    </div>
+</div>	<script>
+StackExchange.ready(function(){$.get('/posts/1987524/ivc/7cfe');});
+</script>
+<noscript>
+    &lt;div&gt;&lt;img src="/posts/1987524/ivc/7cfe" class="dno" alt="" width="0" height="0"&gt;&lt;/div&gt;
+</noscript><div style="display:none" id="prettify-lang">default</div></div>
+
+
+        </div>
+    </div><script async="" src="./stars_files/clc.min.js"></script>
+    <div id="footer" class="categories">
+        <div class="footerwrap">            
+            <div id="footer-menu">
+                <div class="top-footer-links">
+                    <a href="http://stackoverflow.com/company/about">about us</a>
+                        <a href="http://stackoverflow.com/tour">tour</a>
+                    <a href="http://stackoverflow.com/help">help</a>
+                    <a href="http://stackoverflow.blog/?blb=1">blog</a>
+                        <a href="http://chat.stackoverflow.com/">chat</a>
+                    <a href="http://data.stackexchange.com/">data</a>
+                    <a href="http://stackexchange.com/legal">legal</a>
+                    <a href="http://stackexchange.com/legal/privacy-policy">privacy policy</a>
+                    <a href="http://stackoverflow.com/company/work-here">work here</a>
+                    <a href="https://www.stackoverflowbusiness.com/advertise">advertising info</a>
+                        <a href="http://stackoverflow.com/jobs/directory/developer-jobs">developer jobs directory</a>
+
+                    <a onclick="StackExchange.switchMobile(&quot;on&quot;)">mobile</a>
+                    <b><a href="http://stackoverflow.com/contact">contact us</a></b>
+                        <b><a href="http://meta.stackoverflow.com/">feedback</a></b>
+                    
+                </div>
+                <div id="footer-sites">
+                    <table>
+    <tbody><tr>
+            <th colspan="3">
+                Technology
+            </th>
+            <th>
+                Life / Arts
+            </th>
+            <th>
+                Culture / Recreation
+            </th>
+            <th>
+                Science
+            </th>
+            <th>
+                Other
+            </th>
+    </tr>
+    <tr>
+            <td>
+                <ol>
+                        <li><a href="http://stackoverflow.com/" title="professional and enthusiast programmers">Stack Overflow</a></li>
+                        <li><a href="http://serverfault.com/" title="system and network administrators">Server Fault</a></li>
+                        <li><a href="http://superuser.com/" title="computer enthusiasts and power users">Super User</a></li>
+                        <li><a href="http://webapps.stackexchange.com/" title="power users of web applications">Web Applications</a></li>
+                        <li><a href="http://askubuntu.com/" title="Ubuntu users and developers">Ask Ubuntu</a></li>
+                        <li><a href="http://webmasters.stackexchange.com/" title="pro webmasters">Webmasters</a></li>
+                        <li><a href="http://gamedev.stackexchange.com/" title="professional and independent game developers">Game Development</a></li>
+                        <li><a href="http://tex.stackexchange.com/" title="users of TeX, LaTeX, ConTeXt, and related typesetting systems">TeX - LaTeX</a></li>
+                        <li><a href="http://softwareengineering.stackexchange.com/" title="professionals, academics, and students working within the systems development life cycle who care about creating, delivering, and maintaining software responsibly">Software Engineering</a></li>
+                        <li><a href="http://unix.stackexchange.com/" title="users of Linux, FreeBSD and other Un*x-like operating systems">Unix &amp; Linux</a></li>
+                        <li><a href="http://apple.stackexchange.com/" title="power users of Apple hardware and software">Ask Different (Apple)</a></li>
+                        <li><a href="http://wordpress.stackexchange.com/" title="WordPress developers and administrators">WordPress Development</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://gis.stackexchange.com/" title="cartographers, geographers and GIS professionals">Geographic Information Systems</a></li>
+                        <li><a href="http://electronics.stackexchange.com/" title="electronics and electrical engineering professionals, students, and enthusiasts">Electrical Engineering</a></li>
+                        <li><a href="http://android.stackexchange.com/" title="enthusiasts and power users of the Android operating system">Android Enthusiasts</a></li>
+                        <li><a href="http://security.stackexchange.com/" title="information security professionals">Information Security</a></li>
+                        <li><a href="http://dba.stackexchange.com/" title="database professionals who wish to improve their database skills and learn from others in the community">Database Administrators</a></li>
+                        <li><a href="http://drupal.stackexchange.com/" title="Drupal developers and administrators">Drupal Answers</a></li>
+                        <li><a href="http://sharepoint.stackexchange.com/" title="SharePoint enthusiasts">SharePoint</a></li>
+                        <li><a href="http://ux.stackexchange.com/" title="user experience researchers and experts">User Experience</a></li>
+                        <li><a href="http://mathematica.stackexchange.com/" title="users of Wolfram Mathematica">Mathematica</a></li>
+                        <li><a href="http://salesforce.stackexchange.com/" title="Salesforce administrators, implementation experts, developers and anybody in-between">Salesforce</a></li>
+                        <li><a href="http://expressionengine.stackexchange.com/" title="administrators, end users, developers and designers for ExpressionEngine® CMS">ExpressionEngine® Answers</a></li>
+                        <li><a href="http://crypto.stackexchange.com/" title="software developers, mathematicians and others interested in cryptography">Cryptography</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://codereview.stackexchange.com/" title="peer programmer code reviews">Code Review</a></li>
+                        <li><a href="http://magento.stackexchange.com/" title="users of the Magento e-Commerce platform">Magento</a></li>
+                        <li><a href="http://dsp.stackexchange.com/" title="practitioners of the art and science of signal, image and video processing">Signal Processing</a></li>
+                        <li><a href="http://raspberrypi.stackexchange.com/" title="users and developers of hardware and software for Raspberry Pi">Raspberry Pi</a></li>
+                        <li><a href="http://codegolf.stackexchange.com/" title="programming puzzle enthusiasts and code golfers">Programming Puzzles &amp; Code Golf</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#technology" class="more">
+                                more (7)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://photo.stackexchange.com/" title="professional, enthusiast and amateur photographers">Photography</a></li>
+                        <li><a href="http://scifi.stackexchange.com/" title="science fiction and fantasy enthusiasts">Science Fiction &amp; Fantasy</a></li>
+                        <li><a href="http://graphicdesign.stackexchange.com/" title="Graphic Design professionals, students, and enthusiasts">Graphic Design</a></li>
+                        <li><a href="http://movies.stackexchange.com/" title="movie and tv enthusiasts">Movies &amp; TV</a></li>
+                        <li><a href="http://music.stackexchange.com/" title="musicians, students, and enthusiasts">Music: Practice &amp; Theory</a></li>
+                        <li><a href="http://cooking.stackexchange.com/" title="professional and amateur chefs">Seasoned Advice (cooking)</a></li>
+                        <li><a href="http://diy.stackexchange.com/" title="contractors and serious DIYers">Home Improvement</a></li>
+                        <li><a href="http://money.stackexchange.com/" title="people who want to be financially literate">Personal Finance &amp; Money</a></li>
+                        <li><a href="http://academia.stackexchange.com/" title="academics and those enrolled in higher education">Academia</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#lifearts" class="more">
+                                more (8)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://english.stackexchange.com/" title="linguists, etymologists, and serious English language enthusiasts">English Language &amp; Usage</a></li>
+                        <li><a href="http://skeptics.stackexchange.com/" title="scientific skepticism">Skeptics</a></li>
+                        <li><a href="http://judaism.stackexchange.com/" title="those who base their lives on Jewish law and tradition and anyone interested in learning more">Mi Yodeya (Judaism)</a></li>
+                        <li><a href="http://travel.stackexchange.com/" title="road warriors and seasoned travelers">Travel</a></li>
+                        <li><a href="http://christianity.stackexchange.com/" title="committed Christians, experts in Christianity and those interested in learning more">Christianity</a></li>
+                        <li><a href="http://ell.stackexchange.com/" title="speakers of other languages learning English">English Language Learners</a></li>
+                        <li><a href="http://japanese.stackexchange.com/" title="students, teachers, and linguists wanting to discuss the finer points of the Japanese language">Japanese Language</a></li>
+                        <li><a href="http://gaming.stackexchange.com/" title="passionate videogamers on all platforms">Arqade (gaming)</a></li>
+                        <li><a href="http://bicycles.stackexchange.com/" title="people who build and repair bicycles, people who train cycling, or commute on bicycles">Bicycles</a></li>
+                        <li><a href="http://rpg.stackexchange.com/" title="gamemasters and players of tabletop, paper-and-pencil role-playing games">Role-playing Games</a></li>
+                        <li><a href="http://anime.stackexchange.com/" title="anime and manga fans">Anime &amp; Manga</a></li>
+                        <li><a href="http://mechanics.stackexchange.com/" title="mechanics and DIY enthusiast owners of cars, trucks, and motorcycles">Motor Vehicle Maintenance &amp; Repair</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#culturerecreation" class="more">
+                                more (17)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://mathoverflow.net/" title="professional mathematicians">MathOverflow</a></li>
+                        <li><a href="http://math.stackexchange.com/" title="people studying math at any level and professionals in related fields">Mathematics</a></li>
+                        <li><a href="http://stats.stackexchange.com/" title="people interested in statistics, machine learning, data analysis, data mining, and data visualization">Cross Validated (stats)</a></li>
+                        <li><a href="http://cstheory.stackexchange.com/" title="theoretical computer scientists and researchers in related fields">Theoretical Computer Science</a></li>
+                        <li><a href="http://physics.stackexchange.com/" title="active researchers, academics and students of physics">Physics</a></li>
+                        <li><a href="http://chemistry.stackexchange.com/" title="scientists, academics, teachers and students">Chemistry</a></li>
+                        <li><a href="http://biology.stackexchange.com/" title="biology researchers, academics, and students">Biology</a></li>
+                        <li><a href="http://cs.stackexchange.com/" title="students, researchers and practitioners of computer science">Computer Science</a></li>
+                        <li><a href="http://philosophy.stackexchange.com/" title="those interested in the study of the fundamental nature of knowledge, reality, and existence">Philosophy</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#science" class="more">
+                                more (3)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://meta.stackexchange.com/" title="meta-discussion of the Stack Exchange family of Q&amp;A websites">Meta Stack Exchange</a></li>
+                        <li><a href="http://stackapps.com/" title="apps, scripts, and development with the Stack Exchange API">Stack Apps</a></li>
+                        <li><a href="http://area51.stackexchange.com/" title="proposing new sites in the Stack Exchange network">Area 51</a></li>
+                        <li><a href="https://www.stackoverflowbusiness.com/talent">Stack Overflow Talent</a></li>
+                    
+                </ol>
+            </td>
+    </tr>
+</tbody></table>
+                </div>
+            </div>
+            <div id="copyright">
+                site design / logo © 2017 Stack Exchange Inc; user contributions licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="license">cc by-sa 3.0</a> 
+                with <a href="http://blog.stackoverflow.com/2009/06/attribution-required/" rel="license">attribution required</a>
+            </div>
+            <div id="svnrev">
+                rev 2017.1.24.24790
+            </div>
+                </div>
+    </div>
+    <noscript>
+        &lt;div id="noscript-warning"&gt;Stack Overflow works best with JavaScript enabled&lt;img src="https://pixel.quantserve.com/pixel/p-c1rF4kxgLUzNc.gif" alt="" class="dno"&gt;&lt;/div&gt;
+    </noscript>
+        <script> setTimeout(function() { $("#adzerk-user-match").remove(); }, 2000);</script>
+
+    <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function() { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+                ga('create', 'UA-5620270-1');
+                ga('create', 'UA-5620270-59', {name: 'pageData', sampleRate: 5 });
+                ga('set', 'dimension2', '|javascript|jquery|css|rating|');
+                ga('pageData.set', 'dimension2', '|javascript|jquery|css|rating|');
+                ga('send', 'pageview');
+                ga('pageData.send', 'pageview');
+        var _qevents = _qevents || [],
+            _comscore = _comscore || [];
+        (function () {
+            var ssl='https:'==document.location.protocol,
+                s=document.getElementsByTagName('script')[0],
+                qc=document.createElement('script');
+                qc.async = true;
+                qc.src = (ssl ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+                s.parentNode.insertBefore(qc, s);
+                _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+                            var sc=document.createElement('script');
+                sc.async=true;
+                sc.src=(ssl?'https://sb':'http://b') + '.scorecardresearch.com/beacon.js';
+                s.parentNode.insertBefore(sc, s);
+                _comscore.push({ c1: "2", c2: "17440561" });
+        })();
+
+    </script>
+        
+    
+            <script type="text/javascript">
+                
+                (function(appendChild) {
+                    Node.prototype.appendChild = function() {
+                        var parent = this;
+                        var newNode = arguments[0];
+                        if (parent.nodeName === 'HEAD'
+                            && newNode
+                            && newNode.nodeName === 'SCRIPT'
+                            && newNode.src) {
+                            
+                            window.setTimeout(function() {
+                                var result = newNode.src.match(/^https:\/\/maps\.googleapis\.com\/maps\/api\/place\/js\/(\w+)Service\./i) || [];
+                                var service = result[1];
+                                if (service) {
+                                    if (service === 'Autocompletion') service =  2;
+                                    else if (service === 'Place') service = 1;
+                                    else service = 0;
+                                    StackExchange.using('gps', function() {
+                                        StackExchange.gps.track('google_maps_places_api.call', { service: service });
+                                    });
+                                }
+                            }, 0);
+                        }
+                        return appendChild.apply(this, arguments);
+                    };
+                })(Node.prototype.appendChild);
+            </script>
+    
+</body></html>

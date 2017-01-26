@@ -92,7 +92,9 @@ function submitButtonRatings(){
       data: vehicle_data
     })
     .done(function(response){
-      $(".ratings").append(response)
+      $(".ratings").append(response);
+      $(".stars").css("display", "block");
+
     })
 
   })
