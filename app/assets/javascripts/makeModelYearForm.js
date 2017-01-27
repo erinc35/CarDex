@@ -8,6 +8,7 @@ $(document).ready(function(){
   focusSubmitButton();
   submitButtonSafety();
   submitButtonRatings();
+  // safetyButton();
 })
 
 function disableModelDropdown(){
@@ -73,11 +74,19 @@ function submitButtonReviews(){
       data: vehicle_data
     })
     .done(function(response){
-      // $("#tab-1").css("display", "block");
-      // $("#tab-1").append(response);
+      console.log(response)
+      $("#tab-1").css("display", "block");
+      $(".tabs").append(response);
+      // $("#tab-2").children("#tab-2").css("display", "block !important")
 
     })
 
+  })
+}
+function safetyButton(){
+  $("#tab-2").click(function(event){
+    event.preventDefault();
+    $("#tab-2").children("#tab-2").css("display", "block")
   })
 }
 function submitButtonRatings(){
@@ -92,17 +101,11 @@ function submitButtonRatings(){
       data: vehicle_data
     })
     .done(function(response){
-      $(".zzz").append(response);
-      var averageRating = parseInt($(".zzz").text()) * 20
-      var percentageRating = "%" + averageRating.toString();
-      // console.log(percentageRating)
-      // console.log(averageRating)
-      $(".ratings").css("display", "block");
-      $(".stars").css("height", "0")
+      // $(".zzz").append(response);
+      // var averageRating = parseFloat($(".zzz").text()) * 20
+      // var percentageRating = averageRating.toString() + "%";
+      // $(".ratings").css("display", "block");
       // $(".stars").css("width", percentageRating);
-      // $(".stars").css("display", "none");
-      // $(".stars-div").css("display", "block");
-      // $("#stars").css("width",)
 
 
     })
@@ -119,7 +122,7 @@ function submitButtonSafety(){
       data: vehicle_data
     })
     .done(function(response){
-      // $(".safety").append(response)
+      $(".tabs").append(response)
 
     })
 
