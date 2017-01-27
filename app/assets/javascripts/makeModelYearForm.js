@@ -93,12 +93,12 @@ function submitButtonRatings(){
     })
     .done(function(response){
       $(".zzz").append(response);
-      var averageRating = parseInt($(".zzz").text()) * 20
-      var percentageRating = "%" + averageRating.toString();
-      // console.log(percentageRating)
-      // console.log(averageRating)
+      var averageRating = parseFloat($(".zzz").text()) * 20
+      var percentageRating = averageRating.toString() + "%";
+      console.log(averageRating)
+      console.log(percentageRating)
       $(".ratings").css("display", "block");
-      $(".stars").css("height", "0")
+      $(".stars").css("width", percentageRating)
       // $(".stars").css("width", percentageRating);
       // $(".stars").css("display", "none");
       // $(".stars-div").css("display", "block");
