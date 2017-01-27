@@ -105,9 +105,16 @@ ul.tabs li.current{
   border-bottom: 1px solid black;
 }
 .ratings{
+  display: none;
   padding-top: 2%;
   padding-right: 35%;
   padding-left: 35%;
 }
 
+/*.stars-div{
+  display: none;
+}
+.stars{
+  display: none;
+}*/
 
