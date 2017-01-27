@@ -43,7 +43,7 @@ ul.tabs li.current{
   margin-left: 52px;
 }*/
 .tab-content{
-  margin-top: 20%;
+  margin-top: 0;
   text-align: start;
   display: none;
   background: #ededed;
@@ -91,9 +91,9 @@ ul.tabs li.current{
     text-decoration: none;
 }
 
-.tabs-div{
+/*.tabs-div{
   display: none;
-}
+}*/
 .road{
   background-image: url("/assets/road.JPG");
   -webkit-background-size: cover;
