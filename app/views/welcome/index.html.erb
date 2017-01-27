@@ -10,7 +10,7 @@
       <% @makes_array.each do |make| %>
         <option value=<%= make %>><%= make %></option>
       <% end %>
-    </select>
+    </select>`
   <%= render partial: 'partials/models', locals: {models_array: []} %>
   <%= render partial: 'partials/years', locals: {years_array: []} %>
     <input id="submit-button" type="submit" name="Search">
