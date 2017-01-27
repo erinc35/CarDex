@@ -8,7 +8,7 @@ $(document).ready(function(){
   focusSubmitButton();
   submitButtonSafety();
   submitButtonRatings();
-  // safetyButton();
+
 })
 
 function disableModelDropdown(){
@@ -49,16 +49,10 @@ function showYearDropDown(){
       data: data
     })
     .done(function(response){
-      // console.log(response)
-      // var year_response = $(response).filter("#year-button").text();
-      // console.log(year_response);
       $("#year-button").prop('disabled', false);
       $("#year-button").replaceWith(response);
       $("#submit-button").prop('disabled', false);
       $("#year-button").trigger("focus")
-      // for (var i = 0; i < parsed_response.length; i++){
-      //   $("#year-button").append( '<option value=' + parsed_response[i] + '>' + parsed_response[i]+'</option>')
-      // }
     })
   })
 }
@@ -81,12 +75,6 @@ function submitButtonReviews(){
 
     })
 
-  })
-}
-function safetyButton(){
-  $("#tab-2").click(function(event){
-    event.preventDefault();
-    $("#tab-2").children("#tab-2").css("display", "block")
   })
 }
 function submitButtonRatings(){
