@@ -15,8 +15,12 @@ class WelcomeController < ApplicationController
 
     if request.xhr?
       parsed_response = JSON.parse(reviews_data.body)
+      @authors = parsed_response["reviews"].map {|array| array["author"]["authorName"]}
       @reviews = parsed_response["reviews"].map {|array| array["text"]}
+      @authors_and_reviews = @authors.zip(@reviews)
       render partial: 'partials/reviews', locals: {reviews: @reviews}
+      # render partial: 'partials/reviews', locals: {authors_and_reviews: @authors_and_reviews}
+
     end
   end
 
