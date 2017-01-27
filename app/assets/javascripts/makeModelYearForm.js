@@ -98,6 +98,7 @@ function submitButtonRatings(){
       // console.log(percentageRating)
       // console.log(averageRating)
       $(".ratings").css("display", "block");
+      $(".stars").css("height", "0")
       // $(".stars").css("width", percentageRating);
       // $(".stars").css("display", "none");
       // $(".stars-div").css("display", "block");
