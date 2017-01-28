@@ -68,7 +68,6 @@ function submitButtonReviews(){
       data: vehicle_data
     })
     .done(function(response){
-      console.log(response)
       $("#tab-1").css("display", "block");
       $(".tabs").append(response);
       // $("#tab-2").children("#tab-2").css("display", "block !important")

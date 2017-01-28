@@ -15,6 +15,8 @@ Rails.application.routes.draw do
     get 'safety', to: "welcome#safety"
 
     get 'averageRating', to: "welcome#averageRating"
+
+    get 'authors', to: "welcome#authors"
   end
 
   root 'welcome#index'
