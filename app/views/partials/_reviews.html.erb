@@ -1,9 +1,11 @@
 <div id="tab-1" class="tab-content current">
+    <% rating.each do |car|%>
     <% authors_and_reviews.each do |author,review| %>
   <div class="review">
+  <p class="rating"><%= rating%></p>
   <p class="authors_reviews"><b>By <i><%= author %></i> :</b> <%= review%></p><br>
   </div>
     <% end %>
-<p class="rating"></p>
+    <% end %>
 </div>
 
