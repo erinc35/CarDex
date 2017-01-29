@@ -8,6 +8,7 @@ $(document).ready(function(){
   focusSubmitButton();
   submitButtonSafety();
   submitButtonRatings();
+  submitButtonEachCarRating();
 
 })
 
@@ -116,6 +117,22 @@ function submitButtonSafety(){
   })
 }
 
+function submitButtonEachCarRating(){
+  $(".container").on("submit", "#search-form", function(){
+
+    var vehicle_data = $(this).serialize();
+    $.ajax({
+      method: "GET",
+      url: "/welcome/get_reviews",
+      data: vehicle_data
+    })
+    .done(function(response){
+      $(".tabs").append(response)
+
+    })
+
+  })
+}
 
 
 
