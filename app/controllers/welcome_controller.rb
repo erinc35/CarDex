@@ -17,10 +17,9 @@ class WelcomeController < ApplicationController
       parsed_response = JSON.parse(reviews_data.body)
       @reviews = parsed_response["reviews"].map {|array| array["text"]}
       @authors = parsed_response["reviews"].map {|array| array["author"]["authorName"]}
-      @authors_and_reviews = @authors.zip(@reviews)
-      @rating = parsed_response["reviews"].map {|array| array["averageRating"]}
-      p @rating
-      render partial: 'partials/reviews', locals: {authors_and_reviews: @authors_and_reviews, rating: @rating}
+      @ratings = parsed_response["reviews"].map {|array| array["averageRating"]}
+      @authors_and_reviews_ratings = @authors.zip(@reviews,@ratings)
+      render partial: 'partials/reviews', locals: {authors_and_reviews_ratings: @authors_and_reviews_ratings}
 
     end
   end

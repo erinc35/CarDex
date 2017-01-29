@@ -113,7 +113,13 @@ ul.tabs li.current{
   padding-left: 30%;
 
 }
+.rating{
+  display: none;
+}
 
 .authors_reviews{
   border-bottom: 1px solid gray;
+}
+.review{
+  position: relative;
 }
