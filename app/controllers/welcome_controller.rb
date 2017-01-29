@@ -17,25 +17,14 @@ class WelcomeController < ApplicationController
       parsed_response = JSON.parse(reviews_data.body)
       @reviews = parsed_response["reviews"].map {|array| array["text"]}
       @authors = parsed_response["reviews"].map {|array| array["author"]["authorName"]}
-
       @authors_and_reviews = @authors.zip(@reviews)
+      @rating = parsed_response["reviews"].map {|array| array["ratings_data"]}
       render partial: 'partials/reviews', locals: {authors_and_reviews: @authors_and_reviews}
-      # render partial: 'partials/reviews', locals: {authors_and_reviews: @authors_and_reviews}
 
     end
   end
 
-  # def authors
-  #   reviews_data = HTTParty.get("https://api.edmunds.com/api/vehiclereviews/v2/#{params["make"].downcase}/#{params["model"].downcase}/#{params["year"].downcase}?fmt=json&api_key=#{ENV['EDMUNDSAPIKEY']}")
 
-  #   if request.xhr?
-  #     parsed_response = JSON.parse(reviews_data.body)
-  #     @authors = parsed_response["reviews"].map {|array| array["author"]["authorName"]}
-  #     render partial: 'partials/reviews', locals: {authors: @authors}
-  #     # render partial: 'partials/reviews', locals: {authors_and_reviews: @authors_and_reviews}
-
-  #   end
-  # end
 
   def safety
     safety_data = HTTParty.get("https://api.edmunds.com/api/vehicle/v2/#{params["make"]}/#{params["model"]}/#{params["year"]}/safety?fmt=json&api_key=#{ENV['EDMUNDSAPIKEY']}")
