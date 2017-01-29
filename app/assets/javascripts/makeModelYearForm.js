@@ -127,7 +127,7 @@ function submitButtonEachCarRating(){
       data: vehicle_data
     })
     .done(function(response){
-      $(".tabs").append(response)
+      $(".rating").append(response)
 
     })
 
