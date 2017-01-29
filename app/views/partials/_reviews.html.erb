@@ -1,11 +1,14 @@
 <div id="tab-1" class="tab-content current">
-    <% rating.each do |car|%>
-    <% authors_and_reviews.each do |author,review| %>
+
+    <% authors_and_reviews_ratings.each do |author,review, rating| %>
   <div class="review">
-  <p class="rating"><%= rating%></p>
-  <p class="authors_reviews"><b>By <i><%= author %></i> :</b> <%= review%></p><br>
+    <div class="star-box" style="display: inline-block;width:auto ;white-space: nowrap;"> <span class="unfilled" style="color:#d3d3d3; position: absolute;top: 0;left: 0;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      <span class="filled" style="color:#e9ce18; white-space: nowrap; overflow: hidden;position: absolute;top: 0;left: 0;width:4%">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
   </div>
-    <% end %>
+    <p class="authors_reviews"><b>By <i><%= author %></i> :</b> <%= review%></p><br>
+
+    <p class="rating"><%= rating%></p>
+    </div>
     <% end %>
 </div>
 
