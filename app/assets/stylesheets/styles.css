@@ -8,7 +8,7 @@
   margin-right: auto;
   background-color: #007EE5 ;
   font-size: 20px;
-  width: 80%;
+  width: 54%;
   text-align: center;
   position: relative;
 }
@@ -20,7 +20,7 @@
   /*border-bottom: 1px solid;*/
 }
 ul.tabs{
-  height: 42px;
+
   border-radius: 8px;
   overflow: auto;
   margin: 0px;
@@ -44,7 +44,6 @@ ul.tabs li.current a{
 .current{
   border-radius: 8px;
   background: #e1e8f4;
-  color: blue;
 }
 /*.tab-link.current{
   margin-left: 52px;
@@ -75,7 +74,7 @@ ul.tabs li.current a{
   width: 50%;
 }
 .container p{
-  font-family: 'helvetica neue';
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
   font-size: 20px;
   padding-top: 3%;
 }
@@ -129,4 +128,18 @@ ul.tabs li.current a{
 }
 .review{
   position: relative;
+}
+
+.cardex{
+/*  color:#007EE5;*/
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+  letter-spacing: 10px;
+  font-size: 100px;
+  text-align: center;
+}
+.cardex-p{
+  /*color:#007EE5;*/
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+  font-size: 28px;
+  text-align: center;
 }
