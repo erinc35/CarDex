@@ -97,7 +97,7 @@ ul.tabs li.current{
   display: none;
 }*/
 .road{
-  background-image: url("/assets/road.JPG");
+  background-image: url("/assets/road.jpg");
   -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
