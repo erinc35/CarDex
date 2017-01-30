@@ -6,7 +6,7 @@
   border-radius: 8px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #D9E4E6;
+  background-color: #007EE5 ;
   font-size: 20px;
   width: 80%;
   text-align: center;
@@ -113,9 +113,9 @@ ul.tabs li.current{
   padding-left: 30%;
 
 }
-.rating{
+/*.rating{
   display: none;
-}
+}*/
 
 .authors_reviews{
   border-bottom: 1px solid gray;
