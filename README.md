@@ -7,3 +7,4 @@
 
 * Reduced frontend codebase by ~50% through using backend templating with partials and HTML5 in Ruby on Rails.
 
+* Provides yep reviews for the dealer reviews and information in preferred zip code.
