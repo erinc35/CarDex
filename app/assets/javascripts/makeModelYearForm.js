@@ -128,6 +128,7 @@ function submitButtonEachCarRating(){
     })
     .done(function(response){
       $(".tabs").append(response)
+    var averageRating = parseFloat($(".rating").text())
 
     })
 

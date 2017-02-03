@@ -2,9 +2,10 @@
   <% authors_and_reviews_ratings.each do |author,review, rating| %>
   <div class="review">
     <div class="star-box" style="display: inline-block;width:auto ;white-space: nowrap;"> <span class="unfilled" style="color:#d3d3d3; position: absolute;top: 0;left: 0;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-      <span class="filled" style="color:#e9ce18; white-space: nowrap; overflow: hidden;position: absolute;top: 0;left: 0;width:4%">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-  </div>
+      <span class="filled" style="color:#e9ce18; white-space: nowrap; overflow: hidden;position: absolute;top: 0;left: 0;width: calc(<%=rating%>%*3)">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+    </div>
     <p class="rating"><%= rating%></p>
+    <p class="sample"></p>
     <p class="authors_reviews"><b>By <i><%= author %></i> :</b> <%= review%></p><br>
 
     </div>
