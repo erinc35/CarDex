@@ -111,6 +111,7 @@ ul.tabs li.current a{
     background-size: cover;
     background-position: 10% 85%;
   height: 450px;
+
   border-bottom: 1px solid black;
 }
 .ratings{
