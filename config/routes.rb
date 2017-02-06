@@ -17,6 +17,7 @@ Rails.application.routes.draw do
     get 'averageRating', to: "welcome#averageRating"
 
     get 'authors', to: "welcome#authors"
+
   end
 
   root 'welcome#index'
