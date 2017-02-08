@@ -53,7 +53,6 @@ ul.tabs li.current a{
   padding-left: 2%;
   margin-top: 0;
   text-align: start;
-
   display: none;
   background: #ededed;
 }
