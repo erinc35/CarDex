@@ -130,7 +130,10 @@ ul.tabs li.current a{
 .review{
   position: relative;
 }
+.form-message{
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
 
+}
 
 .cardex{
   font-family: "helvetica neue", helvetica, arial, sans-serif;
