@@ -69,6 +69,7 @@ ul.tabs li.current a{
 }
 
 .tab-content.current{
+
   display: inherit;
 }
 
