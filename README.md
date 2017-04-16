@@ -1,10 +1,24 @@
-# CarDex
-![Settings Window](https://github.com/erinc35/CarDex/blob/master/app/assets/images/cardex.png)
+# README
 
-* CarDex help prospect vehicle buyers to make their decision by providing safety ratings and reviews for the searched vehicles.
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-* Architected RESTful API using Ruby on Rails with Edmunds and Yelp API integration to provide car buyers with 10+ customer and dealer reviews and safety ratings per vehicle.
+Things you may want to cover:
 
-* Reduced frontend codebase by ~50% through using backend templating with partials and HTML5 in Ruby on Rails.
+* Ruby version
 
-* Provides yelp reviews for the dealer reviews and information in preferred zip code.
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...

@@ -3,23 +3,13 @@ $(document).ready(function(){
 })
 
 function tabContent() {
-  $('.tabs li').click(function(event){
+  $('ul.tabs li').click(function(){
+    var tab_id = $(this).attr('data-tab');
 
-    event.preventDefault();
+    $('ul.tabs li').removeClass('current');
+    $('.tab-content').removeClass('current');
 
-    $(".tabs").children(".current").removeClass('current');
     $(this).addClass('current');
-    var buu = $(this).children("a").attr("href");
-    $(".tab-content").css("display", "none");
-    $(buu).css("display", "block");
-
-
-
-     });
-  }
-
-
-     // $('ul.tabs li').removeClass('current');
-     //    $(this).addClass('current');
-     //    $('.tab-content').hide();
-     //    $($(this).attr('tab-content')).show();
+    $("#"+tab_id).addClass('current');
+  })
+}
