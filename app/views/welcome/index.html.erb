@@ -1,11 +1,7 @@
-
-<div class="road"> </div>
-<div id="fade">
-  <h1 class="cardex">CARDEX</h1>
-  <p class="cardex-p">Guides you through your decision making process.</p>
-</div>
+<div>
 <div class = "container" >
-  <p class="form-message">Choose year, make, model and see the reviews:</p>
+
+  <p>Choose year, make, model and see the reviews:</p>
 
   <form id="search-form" action="/searches" method="post">
     <select id="make-button" name='make'>
@@ -14,33 +10,30 @@
         <option value=<%= make %>><%= make %></option>
       <% end %>
     </select>
-  <%= render partial: 'partials/models', locals: {models_array: []} %>
-  <%= render partial: 'partials/years', locals: {years_array: []} %>
+
+    <select id="model-button" name='model'>
+      <option value="" default selected>Model</option>
+    </select>
+
+    <select id="year-button" name='year'>
+      <option value="" default selected>Year</option>
+    </select>
+
     <input id="submit-button" type="submit" name="Search">
 
   </form><br>
+  <!-- <div><ul id="username" ><ul id="vehicle-info"></ul></ul></div> -->
 
 </div>
-    <div class="reviews-overview">
-    <%= render partial: 'partials/averageRating', locals: {averageRating: ""} %>
-    </div>
 
-    <div class="tabs-div">
-
+<div class="float-left-div">
+    <div class="float-left">
       <ul class="tabs">
-        <li class="current"><a href="#tab-1">Reviews</a></li>
-        <li><a href="#tab-2">Safety Ratings</a></li>
+        <li class="tab-link current" data-tab="tab-1">Reviews</li>
+        <li class="tab-link" data-tab="tab-2">Safety Ratings</li>
       </ul>
 
-      <%= render partial: 'partials/reviews', locals: {reviews: [], authors: [], authors_and_reviews_ratings: []} %>
-      <%= render partial: 'partials/safety', locals: {safety: []} %>
+      <%= render 'partials/reviews' %>
+      <%= render 'partials/safety' %>
     </div>
-
-
-
-
-
-
-
-
-
+</div>
