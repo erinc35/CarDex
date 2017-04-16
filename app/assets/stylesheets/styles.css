@@ -3,7 +3,7 @@
   padding: 0;
 }
 .float-left{
-  margin-top: 35%;
+  margin-top: 30%;
   margin-left: auto;
   margin-right: auto;
   background-color: #D9E4E6;
@@ -26,7 +26,7 @@ ul.tabs li{
   background: none;
   color: gray;
   display: inline-block;
-  padding: 10px 15px;
+  padding: 15px 15px;
   cursor: pointer;
 }
 ul.tabs li.current{
