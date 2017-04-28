@@ -47,7 +47,7 @@ ul.tabs li.current{
 }
 
 .tabs{
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
 }
 .container{
   margin-right: auto;
