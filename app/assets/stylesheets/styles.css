@@ -24,7 +24,7 @@ ul.tabs{
 ul.tabs li{
   overflow: auto;
   background: none;
-  color: black;
+  color: gray;
   display: inline-block;
   padding: 15px 15px;
   cursor: pointer;
