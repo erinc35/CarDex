@@ -31,7 +31,7 @@ ul.tabs li{
 }
 ul.tabs li.current{
   border-radius: 8px;
-  background: #e1e8f4;
+  background: #e1e8f3;
   color: black;
 }
 /*.tab-link.current{
